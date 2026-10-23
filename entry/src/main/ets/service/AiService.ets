@@ -4,6 +4,8 @@ import { AiConfig } from '../config/AiConfig';
 import { SAMPLE_ANALYSIS } from '../data/SampleData';
 import { AnalysisResult, CategoryScore, Clause, Contract, NegotiationScript, RiskItem } from '../model/Models';
 
+const LOG_TAG: string = 'CR_AI';
+
 interface ApiNegotiation {
   tone: string;
   text: string;
@@ -137,7 +139,11 @@ function levelImpact(level: string): number {
 
 export class AiService {
   static async analyze(contract: Contract): Promise<AnalysisResult> {
+    hilog.info(0x0000, LOG_TAG, 'analyze start useMock=%{public}s keyEmpty=%{public}s',
+      AiConfig.USE_MOCK.toString(), (AiConfig.API_KEY.length === 0).toString());
+
     if (AiConfig.USE_MOCK || AiConfig.API_KEY.length === 0) {
+      hilog.warn(0x0000, LOG_TAG, 'using mock analysis');
       await delay(900);
       return SAMPLE_ANALYSIS;
     }
@@ -146,7 +152,8 @@ export class AiService {
       return await AiService.analyzeWithApi(contract);
     } catch (error) {
       // 网络或模型异常时回退到内置分析结果，保证演示可继续。
-      hilog.error(0x0000, 'ContractRadar', 'AI analyze failed: %{public}s', String(error));
+      hilog.error(0x0000, LOG_TAG, 'analyze failed: %{public}s', String(error));
+      hilog.warn(0x0000, LOG_TAG, 'fallback to mock analysis');
       await delay(600);
       return SAMPLE_ANALYSIS;
     }
@@ -191,7 +198,7 @@ export class AiService {
       };
 
       const chatUrl: string = buildChatUrl(AiConfig.BASE_URL);
-      hilog.info(0x0000, 'ContractRadar', 'AI request url=%{public}s model=%{public}s', chatUrl, AiConfig.MODEL);
+      hilog.info(0x0000, LOG_TAG, 'request url=%{public}s model=%{public}s', chatUrl, AiConfig.MODEL);
       const response = await httpRequest.request(chatUrl, options);
       if (response.responseCode !== 200) {
         const errorText: string = response.result as string;
@@ -310,7 +317,7 @@ export class AiService {
         categoryScores.push({ name: '其他', score: Math.round(otherTotal / otherCount) });
       }
 
-      hilog.info(0x0000, 'ContractRadar', 'AI analyze success, risks=%{public}d', risks.length);
+      hilog.info(0x0000, LOG_TAG, 'analyze success risks=%{public}d', risks.length);
 
       return {
         contractId: contract.id,
