@@ -48,10 +48,17 @@ interface ApiChatResponse {
   choices: ApiChatChoice[];
 }
 
+interface ThinkingConfig {
+  type: string;
+}
+
 interface ChatBody {
   model: string;
   messages: ChatMessage[];
   temperature: number;
+  max_tokens: number;
+  stream: boolean;
+  thinking: ThinkingConfig;
 }
 
 function delay(ms: number): Promise<void> {
@@ -169,7 +176,8 @@ export class AiService {
 
       const systemPrompt: string =
         '你是租房合同风险审查助手。请从承租人角度分析合同条款，识别押金、租金、违约金、维修责任、转租、提前解约、免责、争议管辖等风险。' +
-        '只输出 JSON，不要输出 Markdown。JSON 结构：' +
+        '最多输出 6 条风险；每条 reason、consequence、suggestion 不超过 80 字；每条风险最多 2 条谈判话术。' +
+        '只输出 JSON，不要输出 Markdown，不要输出思考过程。JSON 结构：' +
         '{"overallScore":0-100,"summary":"一句话结论","risks":[{"clauseId":"c5","riskType":"押金与租金","level":"high|medium|low","title":"风险标题","reason":"风险原因","consequence":"可能后果","suggestion":"修改建议","revisedClause":"修改后的条款","legalBasis":["law585"],"negotiation":[{"tone":"温和","text":"谈判话术"}]}]}';
 
       const userPrompt: string =
@@ -182,7 +190,10 @@ export class AiService {
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt }
         ],
-        temperature: 0.2
+        temperature: 0.2,
+        max_tokens: 4000,
+        stream: false,
+        thinking: { type: 'disabled' }
       };
 
       const options: http.HttpRequestOptions = {
@@ -194,7 +205,7 @@ export class AiService {
         extraData: JSON.stringify(body),
         expectDataType: http.HttpDataType.STRING,
         connectTimeout: 30000,
-        readTimeout: 60000
+        readTimeout: 90000
       };
 
       const chatUrl: string = buildChatUrl(AiConfig.BASE_URL);
