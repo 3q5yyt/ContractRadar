@@ -33,15 +33,23 @@ interface ChatMessage {
   content: string;
 }
 
-interface ResponseFormat {
-  type: string;
+interface ApiChatMessage {
+  role: string;
+  content: string;
+}
+
+interface ApiChatChoice {
+  message: ApiChatMessage;
+}
+
+interface ApiChatResponse {
+  choices: ApiChatChoice[];
 }
 
 interface ChatBody {
   model: string;
   messages: ChatMessage[];
   temperature: number;
-  response_format: ResponseFormat;
 }
 
 function delay(ms: number): Promise<void> {
@@ -62,6 +70,37 @@ function nowText(): string {
   };
   return date.getFullYear().toString() + '-' + pad(date.getMonth() + 1) + '-' + pad(date.getDate()) +
     ' ' + pad(date.getHours()) + ':' + pad(date.getMinutes());
+}
+
+function buildChatUrl(baseUrl: string): string {
+  let url: string = baseUrl.trim();
+  if (url.endsWith('/')) {
+    url = url.substring(0, url.length - 1);
+  }
+  if (!url.endsWith('/chat/completions')) {
+    url = url + '/chat/completions';
+  }
+  return url;
+}
+
+function extractJsonContent(content: string): string {
+  let text: string = content.trim();
+  if (text.startsWith('```')) {
+    const firstNewline: number = text.indexOf('\n');
+    if (firstNewline >= 0) {
+      text = text.substring(firstNewline + 1);
+    }
+    const lastFence: number = text.lastIndexOf('```');
+    if (lastFence >= 0) {
+      text = text.substring(0, lastFence);
+    }
+  }
+  const start: number = text.indexOf('{');
+  const end: number = text.lastIndexOf('}');
+  if (start >= 0 && end > start) {
+    text = text.substring(start, end + 1);
+  }
+  return text.trim();
 }
 
 function findClause(contract: Contract, clauseId: string): Clause | undefined {
@@ -130,8 +169,7 @@ export class AiService {
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt }
         ],
-        temperature: 0.2,
-        response_format: { type: 'json_object' }
+        temperature: 0.2
       };
 
       const options: http.HttpRequestOptions = {
@@ -146,13 +184,29 @@ export class AiService {
         readTimeout: 60000
       };
 
-      const response = await httpRequest.request(AiConfig.BASE_URL, options);
+      const chatUrl: string = buildChatUrl(AiConfig.BASE_URL);
+      hilog.info(0x0000, 'ContractRadar', 'AI request url=%{public}s model=%{public}s', chatUrl, AiConfig.MODEL);
+      const response = await httpRequest.request(chatUrl, options);
       if (response.responseCode !== 200) {
-        throw new Error('HTTP ' + response.responseCode.toString());
+        const errorText: string = response.result as string;
+        throw new Error('HTTP ' + response.responseCode.toString() + ' ' + errorText.substring(0, 300));
       }
 
       const text: string = response.result as string;
-      const parsed: ApiAnalysis = JSON.parse(text) as ApiAnalysis;
+      const chatResponse: ApiChatResponse = JSON.parse(text) as ApiChatResponse;
+      let content: string = '';
+      if (chatResponse.choices !== undefined && chatResponse.choices.length > 0) {
+        const choice: ApiChatChoice = chatResponse.choices[0];
+        if (choice.message === undefined || choice.message.content === undefined) {
+          throw new Error('empty message content');
+        }
+        content = choice.message.content;
+      } else {
+        // 兼容直接返回分析 JSON 的非标准接口。
+        content = text;
+      }
+
+      const parsed: ApiAnalysis = JSON.parse(extractJsonContent(content)) as ApiAnalysis;
       if (parsed.risks === undefined || parsed.risks.length === 0) {
         throw new Error('empty risks');
       }
