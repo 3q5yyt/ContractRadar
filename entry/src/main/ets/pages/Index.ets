@@ -76,9 +76,30 @@ struct Index {
   @State reportText: string = '';
   @State analyzing: boolean = false;
   @State showAllClauses: boolean = false;
+  @State elapsedSeconds: number = 0;
+  private timerId: number = -1;
 
   aboutToAppear(): void {
     this.loadHistory();
+  }
+
+  aboutToDisappear(): void {
+    this.stopTimer();
+  }
+
+  startTimer(): void {
+    this.stopTimer();
+    this.elapsedSeconds = 0;
+    this.timerId = setInterval(() => {
+      this.elapsedSeconds = this.elapsedSeconds + 1;
+    }, 1000);
+  }
+
+  stopTimer(): void {
+    if (this.timerId !== -1) {
+      clearInterval(this.timerId);
+      this.timerId = -1;
+    }
   }
 
   async loadHistory(): Promise<void> {
@@ -117,11 +138,14 @@ struct Index {
     this.acceptedRiskIds = [];
     this.analyzing = true;
     this.screen = AppScreen.Analysis;
+    this.startTimer();
     AiService.analyze(this.contract).then((result: AnalysisResult) => {
+      this.stopTimer();
       this.analysis = result;
       this.analyzing = false;
       this.saveHistory();
     }).catch(() => {
+      this.stopTimer();
       this.analysis = SAMPLE_ANALYSIS;
       this.analyzing = false;
       this.saveHistory();
@@ -523,7 +547,24 @@ struct Index {
         .width(44)
         .height(44)
         .color(COLOR_NAVY)
-      Text('正在分析合同条款')
+
+      Text('已等待')
+        .fontSize(11)
+        .fontColor(COLOR_MUTED)
+        .margin({ top: 18 })
+      Row() {
+        Text(this.elapsedSeconds.toString())
+          .fontSize(46)
+          .fontWeight(FontWeight.Bold)
+          .fontColor(COLOR_NAVY)
+        Text('秒')
+          .fontSize(14)
+          .fontColor(COLOR_SECONDARY)
+          .margin({ left: 4, bottom: 8 })
+      }
+      .alignItems(VerticalAlign.Bottom)
+
+      Text('正在分析 ' + this.contract.clauses.length.toString() + ' 条条款')
         .fontSize(16)
         .fontWeight(FontWeight.Medium)
         .fontColor(COLOR_TEXT)
@@ -532,6 +573,10 @@ struct Index {
         .fontSize(12)
         .fontColor(COLOR_SECONDARY)
         .margin({ top: 6 })
+      Text('通常需要 10–20 秒，请稍候')
+        .fontSize(11)
+        .fontColor(COLOR_MUTED)
+        .margin({ top: 10 })
     }
     .width('100%')
     .layoutWeight(1)
