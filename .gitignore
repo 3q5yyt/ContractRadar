@@ -1,0 +1,27 @@
+# HarmonyOS / DevEco build outputs
+/build
+/entry/build
+/.hvigor
+/oh_modules
+/entry/oh_modules
+/local.properties
+
+# Build artifacts and signing materials
+*.hap
+*.hsp
+*.app
+*.p7b
+*.p12
+*.cer
+*.key
+*.jks
+
+# IDE
+/.idea
+*.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
