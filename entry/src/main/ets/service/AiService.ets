@@ -113,8 +113,14 @@ function findClause(contract: Contract, clauseId: string): Clause | undefined {
 }
 
 function normalizeLevel(level: string): string {
-  if (level === 'high' || level === 'medium' || level === 'low') {
-    return level;
+  if (level === 'high' || level === '高' || level === '高风险') {
+    return 'high';
+  }
+  if (level === 'low' || level === '低' || level === '低风险') {
+    return 'low';
+  }
+  if (level === 'medium' || level === '中' || level === '中风险') {
+    return 'medium';
   }
   return 'medium';
 }
@@ -206,7 +212,12 @@ export class AiService {
         content = text;
       }
 
-      const parsed: ApiAnalysis = JSON.parse(extractJsonContent(content)) as ApiAnalysis;
+      let parsed: ApiAnalysis = { overallScore: 0, summary: '', risks: [] };
+      try {
+        parsed = JSON.parse(extractJsonContent(content)) as ApiAnalysis;
+      } catch (parseError) {
+        throw new Error('invalid JSON content: ' + content.substring(0, 300));
+      }
       if (parsed.risks === undefined || parsed.risks.length === 0) {
         throw new Error('empty risks');
       }
@@ -236,7 +247,14 @@ export class AiService {
         }
 
         const revised: string = apiRisk.revisedClause !== undefined ? apiRisk.revisedClause : '';
-        const legalBasisIds: string[] = apiRisk.legalBasis !== undefined ? apiRisk.legalBasis : [];
+        const legalBasisIds: string[] = [];
+        if (apiRisk.legalBasis !== undefined) {
+          for (const basisId of apiRisk.legalBasis) {
+            if (typeof basisId === 'string') {
+              legalBasisIds.push(basisId);
+            }
+          }
+        }
 
         const risk: RiskItem = {
           id: 'api_' + clauseId + '_' + risks.length.toString(),
