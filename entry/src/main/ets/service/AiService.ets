@@ -1,7 +1,8 @@
 import { http } from '@kit.NetworkKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
 import { AiConfig } from '../config/AiConfig';
 import { SAMPLE_ANALYSIS } from '../data/SampleData';
-import { AnalysisResult, Clause, Contract, NegotiationScript, RiskItem } from '../model/Models';
+import { AnalysisResult, CategoryScore, Clause, Contract, NegotiationScript, RiskItem } from '../model/Models';
 
 interface ApiNegotiation {
   tone: string;
@@ -100,6 +101,7 @@ export class AiService {
       return await AiService.analyzeWithApi(contract);
     } catch (error) {
       // 网络或模型异常时回退到内置分析结果，保证演示可继续。
+      hilog.error(0x0000, 'ContractRadar', 'AI analyze failed: %{public}s', String(error));
       await delay(600);
       return SAMPLE_ANALYSIS;
     }
@@ -210,16 +212,45 @@ export class AiService {
         overallScore = 70;
       }
 
+      const categoryNames: string[] = ['押金与租金', '违约金', '维修责任', '转租与退租', '提前解约', '免责与争议', '居住安宁'];
+      const categoryScores: CategoryScore[] = [];
+      for (const name of categoryNames) {
+        let count: number = 0;
+        let total: number = 0;
+        for (const risk of risks) {
+          if (risk.riskType === name) {
+            count++;
+            total = total + (risk.level === 'high' ? 90 : (risk.level === 'medium' ? 60 : 30));
+          }
+        }
+        categoryScores.push({ name: name, score: count > 0 ? Math.round(total / count) : 15 });
+      }
+
+      let otherCount: number = 0;
+      let otherTotal: number = 0;
+      for (const risk of risks) {
+        if (categoryNames.indexOf(risk.riskType) < 0) {
+          otherCount++;
+          otherTotal = otherTotal + (risk.level === 'high' ? 90 : (risk.level === 'medium' ? 60 : 30));
+        }
+      }
+      if (otherCount > 0) {
+        categoryScores.push({ name: '其他', score: Math.round(otherTotal / otherCount) });
+      }
+
+      hilog.info(0x0000, 'ContractRadar', 'AI analyze success, risks=%{public}d', risks.length);
+
       return {
         contractId: contract.id,
         contractName: contract.name,
         analyzedAt: nowText(),
+        source: 'api',
         overallScore: overallScore,
         highCount: highCount,
         mediumCount: mediumCount,
         lowCount: lowCount,
         summary: parsed.summary !== undefined && parsed.summary.length > 0 ? parsed.summary : '合同存在若干风险条款，建议逐条核对。',
-        categoryScores: SAMPLE_ANALYSIS.categoryScores,
+        categoryScores: categoryScores,
         risks: risks
       };
     } finally {

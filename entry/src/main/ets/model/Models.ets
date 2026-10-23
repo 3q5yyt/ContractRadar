@@ -57,6 +57,7 @@ export interface AnalysisResult {
   contractId: string;
   contractName: string;
   analyzedAt: string;
+  source: string;
   overallScore: number;
   highCount: number;
   mediumCount: number;

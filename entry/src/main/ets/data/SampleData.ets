@@ -501,6 +501,7 @@ export const SAMPLE_ANALYSIS: AnalysisResult = {
   contractId: SAMPLE_CONTRACT.id,
   contractName: SAMPLE_CONTRACT.name,
   analyzedAt: '2026-10-22 15:40',
+  source: 'mock',
   overallScore: 78,
   highCount: 5,
   mediumCount: 4,
