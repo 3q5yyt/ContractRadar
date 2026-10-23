@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main",
+        "RESOURCES_PATH": [
+          "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/default/default@CompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/default/default@CompileJS/jsbundle",
+          "WORKER_LOADER": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/hap_metadata/default/output_metadata.json",
+          "SOURCE_MAP_DIR": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/source_map/default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/ohosTest",
+        "RESOURCES_PATH": [
+          "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/ohosTest/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/ohosTest",
+          "INTERMEDIA_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/ohosTest",
+          "JS_LITE_ASSETS_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out_lite/ohosTest",
+          "RES_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/ohosTest",
+          "RES_PROFILE_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/ohosTest/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/ohosTest/ohosTest@OhosTestCompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/ohosTest/ohosTest@OhosTestCompileJS/jsbundle",
+          "WORKER_LOADER": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/ohosTest/loader.json",
+          "MANIFEST_JSON": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/manifest/ohosTest",
+          "OUTPUT_METADATA_JSON": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/hap_metadata/ohosTest/output_metadata.json",
+          "SOURCE_MAP_DIR": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/source_map/ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "/Volumes/ORICO/UndergraduateProject/ContractRadar/build",
+    "BUNDLE_NAME": "com.example.contractradar",
+    "VERSION_CODE": 1000000,
+    "VERSION_NAME": "1.0.0",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "/Volumes/ORICO/UndergraduateProject/ContractRadar/build/outputs/default"
+    },
+    "MODULES": [
+      {
+        "name": "entry",
+        "srcPath": "/Volumes/ORICO/UndergraduateProject/ContractRadar/entry",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "/Volumes/ORICO/UndergraduateProject/ContractRadar"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [
+          {
+            "name": "default",
+            "type": "HarmonyOS",
+            "material": {
+              "certpath": "/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.cer",
+              "keyAlias": "debugKey",
+              "keyPassword": "0000001B903213BC23519D564D997FE2FC7492EA0B5FB4BF2952B0DD86490D37ED9EC8045F23BBA59A9816",
+              "profile": "/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.p7b",
+              "signAlg": "SHA256withECDSA",
+              "storeFile": "/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.p12",
+              "storePassword": "0000001B6DA0DF175D3687EBA08D50240F7374B6BF6DFC5E62DD05EE199ADA14BAC2E6B0EF5D6F2CB29D96"
+            }
+          }
+        ],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.0.0(12)",
+            "targetSdkVersion": "5.0.0(12)",
+            "runtimeOS": "HarmonyOS"
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "entry",
+          "srcPath": "./entry",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "/Volumes/ORICO/UndergraduateProject/ContractRadar"
+    ],
+    "BUILD_CACHE_DIR": ""
+  }
+}

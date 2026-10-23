@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "合同雷达主模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "租房合同风险审查与谈判辅助"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "合同雷达"
+    }
+  ]
+}

@@ -1,0 +1,2091 @@
+[2026-10-23T16:21:15.857] [DEBUG] debug-file - env: nodejsVersion=v24.14.1
+[2026-10-23T16:21:16.014] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: false,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-10-23T16:21:16.930] [DEBUG] debug-file - hvigorfile, require result:  { default: { system: [Function: appTasks], plugins: [] } }
+[2026-10-23T16:21:16.931] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:21:16.998] [DEBUG] debug-file - App plugin register hook start...
+[2026-10-23T16:21:17.001] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-10-23T16:21:17.006] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-10-23T16:21:17.025] [DEBUG] debug-file - Project task initialization takes 2 ms 
+[2026-10-23T16:21:17.028] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/hooks/cangjie-register.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/strategy/stage-init-strategy.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/abstract-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/app-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/cli/main/cli.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/bin/hvigor.js
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - project has submodules:entry
+[2026-10-23T16:21:17.035] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-10-23T16:21:17.040] [DEBUG] debug-file - entry : clean cost memory 0.15618133544921875
+[2026-10-23T16:21:17.042] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2026-10-23T16:21:17.097] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2026-10-23T16:21:17.113] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2026-10-23T16:21:17.114] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2026-10-23T16:21:17.114] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2026-10-23T16:21:17.120] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2026-10-23T16:21:17.119] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2026-10-23T16:21:17.120] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2026-10-23T16:21:17.037] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:21:17.121] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2026-10-23T16:21:17.191] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2026-10-23T16:21:17.193] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2026-10-23T16:21:17.194] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2026-10-23T16:21:17.196] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2026-10-23T16:21:17.197] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2026-10-23T16:21:17.199] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2026-10-23T16:21:17.192] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2026-10-23T16:21:17.201] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2026-10-23T16:21:15.857] [DEBUG] debug-file - env: hvigor-config.json5 content = {
+  modelVersion: '5.0.0',
+  dependencies: {},
+  execution: {},
+  logging: {},
+  debugging: {},
+  nodeOptions: {}
+}
+[2026-10-23T16:21:17.122] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2026-10-23T16:21:17.203] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 286474240,
+  heapTotal: 178061312,
+  heapUsed: 155663984,
+  external: 3870352,
+  arrayBuffers: 62139
+} os memoryUsage :15.906387329101562
+[2026-10-23T16:21:16.014] [DEBUG] debug-file - Since current hvigor version 6.26.8 differs from last hvigor version 
+      undefined, delete file-cache.json and task-cache.json.
+[2026-10-23T16:21:16.930] [DEBUG] debug-file - hvigorfile, binding system plugins [Function: appTasks]
+[2026-10-23T16:21:16.931] [DEBUG] debug-file - App plugin prepare start...
+[2026-10-23T16:21:16.999] [DEBUG] debug-file - App plugin register hook end...
+[2026-10-23T16:21:17.002] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2026-10-23T16:21:17.022] [DEBUG] debug-file - Sdk init in 20 ms 
+[2026-10-23T16:21:17.025] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:21:17.036] [DEBUG] debug-file - load to the disk finished
+[2026-10-23T16:21:17.040] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 28 ms 
+[2026-10-23T16:21:17.044] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.097] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.113] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.114] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.02001190185546875
+[2026-10-23T16:21:17.117] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.120] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.0187530517578125
+[2026-10-23T16:21:17.119] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory -0.39234161376953125
+[2026-10-23T16:21:17.120] [DEBUG] debug-file - Module Pack Info:  {
+  summary: {
+    app: { bundleName: 'c***r', bundleType: 'app', version: [Object] },
+    modules: [ [Object] ]
+  },
+  packages: [
+    {
+      deviceType: [Array],
+      moduleType: 'entry',
+      deliveryWithInstall: true,
+      name: 'entry-default'
+    }
+  ]
+}
+[2026-10-23T16:21:17.038] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-10-23T16:21:17.121] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2026-10-23T16:21:17.192] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.07312774658203125
+[2026-10-23T16:21:17.193] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.194] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.0249481201171875
+[2026-10-23T16:21:17.196] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.197] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.200] [DEBUG] debug-file - Task 'entry:default@ProcessLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.193] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.059478759765625
+[2026-10-23T16:21:17.203] [DEBUG] debug-file - Use tool [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/restool]
+ [
+  '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/restool',
+  '-l',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resConfig.json'
+]
+[2026-10-23T16:21:15.858] [DEBUG] debug-file - env: daemon=false
+[2026-10-23T16:21:17.122] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:16.015] [DEBUG] debug-file - Cache service initialization finished in 1 ms 
+[2026-10-23T16:21:16.931] [DEBUG] debug-file - App plugin prepare end...
+[2026-10-23T16:21:16.999] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:21:17.003] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2026-10-23T16:21:17.025] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:21:17.036] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:21:17.041] [INFO] debug-file - Finished :entry:clean... after 1 ms 
+[2026-10-23T16:21:17.095] [DEBUG] debug-file - current product is not Atomic service.
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.1170654296875
+[2026-10-23T16:21:17.113] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.07653045654296875
+[2026-10-23T16:21:17.114] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 102 ms 
+[2026-10-23T16:21:17.118] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.35344696044921875
+[2026-10-23T16:21:17.120] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 108 ms 
+[2026-10-23T16:21:17.119] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 108 ms 
+[2026-10-23T16:21:17.121] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.1386260986328125
+[2026-10-23T16:21:17.038] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-10-23T16:21:17.122] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.192] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 180 ms 
+[2026-10-23T16:21:17.193] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.5624923706054688
+[2026-10-23T16:21:17.194] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 182 ms 
+[2026-10-23T16:21:17.196] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.11377716064453125
+[2026-10-23T16:21:17.199] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.28983306884765625
+[2026-10-23T16:21:17.201] [DEBUG] debug-file - Worker dispatch failed, running processLibs on main thread.
+[2026-10-23T16:21:17.193] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 181 ms 
+[2026-10-23T16:21:15.858] [DEBUG] debug-file - no-daemon, use the parent process.execArgv --max-old-space-size=8192,--max-semi-space-size=16,--expose-gc
+[2026-10-23T16:21:17.123] [DEBUG] debug-file - [
+  '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/node/bin/node',
+  '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader/bin/ark/ts2abc.js',
+  '--target-api-version',
+  '12',
+  '--target-api-sub-version',
+  'beta1'
+]
+[2026-10-23T16:21:16.015] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:21:16.931] [DEBUG] debug-file - App plugin creating...
+[2026-10-23T16:21:16.999] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-10-23T16:21:17.005] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2026-10-23T16:21:17.025] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:21:17.037] [DEBUG] debug-file - Module ContractRadar Collected Dependency: 
+[2026-10-23T16:21:17.095] [DEBUG] debug-file - Use tool [darwin: JAVA_HOME, CLASSPATH]
+ [
+  {
+    JAVA_HOME: '/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home'
+  },
+  { CLASSPATH: undefined }
+]
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 86 ms 
+[2026-10-23T16:21:17.113] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 102 ms 
+[2026-10-23T16:21:17.114] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2026-10-23T16:21:17.118] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 106 ms 
+[2026-10-23T16:21:17.120] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2026-10-23T16:21:17.119] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2026-10-23T16:21:17.121] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 109 ms 
+[2026-10-23T16:21:17.039] [DEBUG] debug-file - Configuration phase cost:1 s 24 ms 
+[2026-10-23T16:21:17.122] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.05997467041015625
+[2026-10-23T16:21:17.192] [INFO] debug-file - Finished :entry:default@ProcessRouterMap... after 1 ms 
+[2026-10-23T16:21:17.193] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 182 ms 
+[2026-10-23T16:21:17.194] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2026-10-23T16:21:17.196] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 185 ms 
+[2026-10-23T16:21:17.199] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 187 ms 
+[2026-10-23T16:21:17.201] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.4182281494140625
+[2026-10-23T16:21:17.193] [INFO] debug-file - Finished :entry:default@ProcessShareConfig... after 1 ms 
+[2026-10-23T16:21:17.190] [DEBUG] debug-file - 12.0.2.0
+[2026-10-23T16:21:16.999] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-10-23T16:21:17.025] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:21:17.037] [DEBUG] debug-file - Module ContractRadar's total dependency: 0
+[2026-10-23T16:21:17.095] [DEBUG] debug-file - Use tool [darwin: NODE_HOME]
+ [
+  { NODE_HOME: '/Applications/DevEco-Studio.app/Contents/tools/node' }
+]
+[2026-10-23T16:21:17.098] [INFO] debug-file - Finished :entry:default@GenerateMetadata... after 1 ms 
+[2026-10-23T16:21:17.113] [INFO] debug-file - Finished :entry:default@CreateBuildProfile... after 1 ms 
+[2026-10-23T16:21:17.118] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 4 ms 
+[2026-10-23T16:21:17.121] [INFO] debug-file - Finished :entry:default@MakePackInfo... after 1 ms 
+[2026-10-23T16:21:17.039] [DEBUG] debug-file - Configuration task cost before running: 1 s 28 ms 
+[2026-10-23T16:21:17.122] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 110 ms 
+[2026-10-23T16:21:17.193] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2026-10-23T16:21:17.194] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2026-10-23T16:21:17.197] [INFO] debug-file - Finished :entry:default@ProcessResource... after 2 ms 
+[2026-10-23T16:21:17.199] [INFO] debug-file - Finished :entry:default@GenerateLoaderJson... after 2 ms 
+[2026-10-23T16:21:17.201] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 189 ms 
+[2026-10-23T16:21:17.190] [DEBUG] debug-file - No need to add fake ui ability because of not in preview process.
+[2026-10-23T16:21:16.999] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-10-23T16:21:17.028] [DEBUG] debug-file - hvigorfile, require result:  { default: { system: [Function: hapTasks], plugins: [] } }
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:21:17.096] [DEBUG] debug-file - entry : default@PreBuild cost memory 16.452606201171875
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2026-10-23T16:21:17.118] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgSdkInfo
+[2026-10-23T16:21:17.040] [DEBUG] debug-file - Executing task :entry:clean
+[2026-10-23T16:21:17.122] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 1 ms 
+[2026-10-23T16:21:17.201] [INFO] debug-file - Finished :entry:default@ProcessLibs... after 2 ms 
+[2026-10-23T16:21:17.191] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.304046630859375
+[2026-10-23T16:21:16.999] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-10-23T16:21:17.028] [DEBUG] debug-file - hvigorfile, binding system plugins [Function: hapTasks]
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-10-23T16:21:17.096] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 84 ms 
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.22905731201171875
+[2026-10-23T16:21:17.118] [DEBUG] debug-file - Task 'entry:default@GeneratePkgSdkInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.040] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2026-10-23T16:21:17.201] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2026-10-23T16:21:17.191] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 179 ms 
+[2026-10-23T16:21:17.028] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:21:17.031] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:21:17.096] [INFO] debug-file - Finished :entry:default@PreBuild... after 54 ms 
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 86 ms 
+[2026-10-23T16:21:17.118] [DEBUG] debug-file - entry : default@GeneratePkgSdkInfo cost memory -0.1788482666015625
+[2026-10-23T16:21:17.028] [DEBUG] debug-file - Hap plugin creating...
+[2026-10-23T16:21:17.191] [INFO] debug-file - Finished :entry:default@ProcessProfile... after 69 ms 
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:21:17.096] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2026-10-23T16:21:17.098] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2026-10-23T16:21:17.118] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 107 ms 
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:21:17.096] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2026-10-23T16:21:17.119] [INFO] debug-file - Finished :entry:default@GeneratePkgSdkInfo... after 1 ms 
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:21:17.096] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.0570831298828125
+[2026-10-23T16:21:17.098] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:21:17.099] [DEBUG] debug-file - Change app api release type with 'Release'
+[2026-10-23T16:21:17.096] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 85 ms 
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:21:17.099] [DEBUG] debug-file - Change app compile API version with '26.0.0.105'
+[2026-10-23T16:21:17.097] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:21:17.099] [DEBUG] debug-file - Change app target API version with '50000012'
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:21:17.099] [DEBUG] debug-file - Change app minimum API version with '50000012'
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:21:17.099] [DEBUG] debug-file - Use cli appEnvironment
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:21:17.112] [DEBUG] debug-file - entry : default@MergeProfile cost memory -3.7150726318359375
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:21:17.032] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:21:17.112] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 100 ms 
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - Module entry task initialization takes 2 ms 
+[2026-10-23T16:21:17.112] [INFO] debug-file - Finished :entry:default@MergeProfile... after 14 ms 
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:21:17.034] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:21:17.229] [DEBUG] debug-file - Info: Pack: normal pack mode
+
+[2026-10-23T16:21:17.347] [DEBUG] debug-file - Info: hardware concurrency count is : 10
+Info: thread count is : 10
+
+[2026-10-23T16:21:17.347] [DEBUG] debug-file - Info: thread pool is started
+
+[2026-10-23T16:21:17.348] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-10-23T16:21:17.351] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-10-23T16:21:17.353] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-10-23T16:21:17.356] [DEBUG] debug-file - 10-23 16:21:17.355 76073 36713879 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png.
+
+[2026-10-23T16:21:17.356] [DEBUG] debug-file - 10-23 16:21:17.356 76073 36713879 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-10-23T16:21:17.356] [DEBUG] debug-file - 10-23 16:21:17.356 76073 36713879 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png.
+10-23 16:21:17.356 76073 36713879 E C01400/ImageTranscoderUtils: ImageFilter IN /Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png
+
+[2026-10-23T16:21:17.362] [DEBUG] debug-file - 10-23 16:21:17.362 76073 36713879 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+
+[2026-10-23T16:21:17.362] [DEBUG] debug-file - Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = /Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png
+
+[2026-10-23T16:21:17.362] [DEBUG] debug-file - 10-23 16:21:17.362 76073 36713879 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png.
+
+[2026-10-23T16:21:17.362] [DEBUG] debug-file - 10-23 16:21:17.362 76073 36713879 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-10-23T16:21:17.362] [DEBUG] debug-file - 10-23 16:21:17.362 76073 36713879 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png.
+10-23 16:21:17.362 76073 36713879 E C01400/ImageTranscoderUtils: ImageFilter IN /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png
+
+[2026-10-23T16:21:17.363] [DEBUG] debug-file - 10-23 16:21:17.363 76073 36713879 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png
+
+[2026-10-23T16:21:17.364] [DEBUG] debug-file - 10-23 16:21:17.364 76073 36713879 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png.
+10-23 16:21:17.364 76073 36713879 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-10-23T16:21:17.364] [DEBUG] debug-file - 10-23 16:21:17.364 76073 36713879 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png.
+10-23 16:21:17.364 76073 36713879 E C01400/ImageTranscoderUtils: ImageFilter IN /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png
+
+[2026-10-23T16:21:17.364] [DEBUG] debug-file - 10-23 16:21:17.364 76073 36713879 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+
+[2026-10-23T16:21:17.364] [DEBUG] debug-file - Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png
+
+[2026-10-23T16:21:17.364] [DEBUG] debug-file - Info: can't scale media json file.
+
+[2026-10-23T16:21:17.365] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png
+
+[2026-10-23T16:21:17.365] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png
+
+[2026-10-23T16:21:17.365] [DEBUG] debug-file - Warning: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/layered_image.json is not png format
+
+[2026-10-23T16:21:17.366] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2026-10-23T16:21:17.366] [DEBUG] debug-file - Info: thread pool is stopped
+
+[2026-10-23T16:21:17.369] [DEBUG] debug-file - entry : default@CompileResource cost memory -5.794258117675781
+[2026-10-23T16:21:17.369] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 357 ms 
+[2026-10-23T16:21:17.370] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2026-10-23T16:21:17.369] [INFO] debug-file - Finished :entry:default@CompileResource... after 168 ms 
+[2026-10-23T16:21:17.370] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/binxo/default' from 'doBinxoNativeLibs' is not exists, just ignore.
+[2026-10-23T16:21:17.370] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.370] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.0903472900390625
+[2026-10-23T16:21:17.370] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 359 ms 
+[2026-10-23T16:21:17.371] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2026-10-23T16:21:17.375] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2026-10-23T16:21:17.379] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2026-10-23T16:21:17.370] [INFO] debug-file - Finished :entry:default@DoNativeStrip... after 1 ms 
+[2026-10-23T16:21:17.371] [DEBUG] debug-file - obfuscationOptions: undefined
+[2026-10-23T16:21:17.377] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2026-10-23T16:21:17.379] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/binxo/default' from 'cacheBinxoNativeLibs' is not exists, just ignore.
+[2026-10-23T16:21:17.372] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.377] [DEBUG] debug-file - before submitting ArkTS compile task to worker pool, config.buildDir: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build
+[2026-10-23T16:21:17.379] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.36452484130859375
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:17.375] [DEBUG] debug-file - build config:
+[2026-10-23T16:21:17.377] [DEBUG] debug-file - default@CompileArkTS work[0] is submitted.
+[2026-10-23T16:21:17.379] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 367 ms 
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - default@CacheNativeLibs work[2] is submitted.
+[2026-10-23T16:21:17.375] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile',
+  etsLoaderPath: '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader',
+  modulePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: '/Volumes/ORICO/UndergraduateProject/ContractRadar',
+  compileSdkVersion: 26,
+  compatibleSdkVersion: 12,
+  originCompatibleSdkVersion: '5.0.0(12)',
+  compatibleSdkVersionStage: 'beta1',
+  bundleName: 'c***r',
+  etsLoaderVersion: '26.0.0.105',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: 'bc7948d6de0c107dc6217e0e8913cde2d7e8ca3ca8b2f168466c4e7b88ed6e19',
+  externalApiPaths: [ '/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets' ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 26,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build',
+  buildCacheProjectDir: '/Volumes/ORICO/UndergraduateProject/ContractRadar',
+  deviceTypes: [ 'phone', 'tablet', '2in1' ],
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: [ [Object] ], definePermissions: undefined },
+  useGetCurrentBundleName: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: false,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  depName2OhExports: {},
+  rootPathSet: [ '/Volumes/ORICO/UndergraduateProject/ContractRadar' ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useUnifiedAst: false,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    skipOhModulesLint: false,
+    enableStrictCheckOHModule: false,
+    disableSendableCheckRules: [],
+    useDeclarationFileSignature: false,
+    customizedOptions: undefined,
+    integratedHsp: false,
+    tsImportSoCheck: false,
+    isPreloadSoEnabled: false
+  },
+  executionMode: 'memory',
+  arkCompileCachePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/default/default@CompileArkTS/esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/har_duplicate/default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  skipOhModulesLint: false,
+  enableStrictCheckOHModule: false,
+  disableSendableCheckRules: [],
+  useDeclarationFileSignature: false,
+  customizedOptions: undefined,
+  integratedHsp: false,
+  tsImportSoCheck: false,
+  isPreloadSoEnabled: false,
+  strictMode: undefined,
+  useNormalizedOHMUrl: false,
+  caseSensitiveCheck: false,
+  strictCheckerOnly: false,
+  aceModuleJsonPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ark_module.json',
+  appResource: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ResourceTable.txt',
+  rawFileResource: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/rawfile',
+  resourceTableHash: '970569da751bf85076aa3ca6319ee3f7ae91e96fe595039f7cd038f91d8d7f76',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:26:26.0.0.105:Release',
+  aceModuleRoot: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/supervisual',
+  aceBuildJson: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/loader.json',
+  cachePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/default/default@CompileArkTS/esmodule/debug',
+  aceModuleBuild: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  resourceTableTs: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.ts',
+  moduleMetaInfoFiles: [
+    {
+      filePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.ts',
+      ohmurl: 'com.example.contractradar/entry/build/generated/r/ResourceTable'
+    }
+  ],
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main': {
+      moduleName: 'entry',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    },
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/ohosTest': {
+      moduleName: 'entry_test',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    },
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry': {
+      moduleName: 'entry',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    },
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar': {
+      moduleName: 'ContractRadar',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    }
+  },
+  pkgJsonFileHash: '55a29fed45a3da94c4d401e6dde20500796c9485ab825fc28b70b90f63ef42e5',
+  allModulePaths: [ '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5',
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: true,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: '/Applications/DevEco-Studio.app/Contents/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/preload/default/preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [ '../*', '../../../build/default/generated/profile/default/*' ]
+  },
+  collectImportersConfig: undefined
+}
+[2026-10-23T16:21:17.379] [INFO] debug-file - Finished :entry:default@BuildJS... after 1 ms 
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - default@CacheNativeLibs work[2] is pushed to ready queue.
+[2026-10-23T16:21:17.377] [DEBUG] debug-file - default@CompileArkTS work[0] is pushed to ready queue.
+[2026-10-23T16:21:17.375] [DEBUG] debug-file - Compile arkts with external api path: /Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.377] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.375] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - A work dispatched to worker[8] failed because of worker busy.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.375] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - Create  resident worker with id: 7.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - default@CacheNativeLibs work[2] has been dispatched to worker[7].
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - default@CacheNativeLibs work[2] is dispatched.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - Create  resident worker with id: 4.
+[2026-10-23T16:21:17.380] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.1745758056640625
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - default@CompileArkTS work[0] has been dispatched to worker[4].
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - default@CompileArkTS work[0] is dispatched.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - CopyResources startTime: 1113389884036708
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - default@CompileArkTS work[1] is submitted.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - default@CompileArkTS work[1] is pushed to ready queue.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - Create  resident worker with id: 8.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - default@CompileArkTS work[1] has been dispatched to worker[8].
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - default@CompileArkTS work[1] is dispatched.
+[2026-10-23T16:21:17.378] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 1.7608489990234375
+[2026-10-23T16:21:17.666] [DEBUG] debug-file - worker[8] has one work done.
+[2026-10-23T16:21:17.666] [DEBUG] debug-file - CopyResources is end, endTime: 1113390171884833
+[2026-10-23T16:21:17.666] [DEBUG] debug-file - default@CompileArkTS work[1] done.
+[2026-10-23T16:21:17.670] [DEBUG] debug-file - worker[7] has one work done.
+[2026-10-23T16:21:17.670] [DEBUG] debug-file - default@CacheNativeLibs work[2] done.
+[2026-10-23T16:21:17.670] [INFO] debug-file - Finished :entry:default@CacheNativeLibs... after 4 ms 
+[2026-10-23T16:21:17.768] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-10-23T16:21:17.771] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2026-10-23T16:21:20.253] [WARN] debug-file - [33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/service/AiService.ets:147:42
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/service/ClipboardService.ets:5:42
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:85:21
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:106:21
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:112:21
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:171:5
+ 'AlertDialog' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:171:17
+ 'show' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:222:20
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:222:20
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:235:20
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:237:20
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:371:30
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:487:13
+ 'AlertDialog' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:487:25
+ 'show' has been deprecated.
+[39m[39m
+
+[2026-10-23T16:21:20.253] [DEBUG] debug-file - Ark compile task finished.finished time is 1113392758986208
+[2026-10-23T16:21:20.253] [DEBUG] debug-file - worker[4] has one work done.
+[2026-10-23T16:21:20.254] [DEBUG] debug-file - default@CompileArkTS work[0] done.
+[2026-10-23T16:21:20.256] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2026-10-23T16:21:20.254] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2026-10-23T16:21:20.257] [DEBUG] debug-file - default@PackageHap work[3] is submitted.
+[2026-10-23T16:21:20.254] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 2 s 317 ms 
+[2026-10-23T16:21:20.257] [DEBUG] debug-file - default@PackageHap work[3] is pushed to ready queue.
+[2026-10-23T16:21:20.257] [DEBUG] debug-file - Use tool [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/lib/app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=utf-8',
+  '-jar',
+  '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/lib/app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/stripped_native_libs/default',
+  '--json-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/package/default/module.json',
+  '--resources-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources',
+  '--index-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources.index',
+  '--pack-info-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info',
+  '--out-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-unsigned.hap',
+  '--ets-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets',
+  '--pkg-sdk-info-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgSdkInfo.json'
+]
+[2026-10-23T16:21:20.254] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2026-10-23T16:21:20.257] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:21:20.257] [DEBUG] debug-file - default@PackageHap work[3] has been dispatched to worker[8].
+[2026-10-23T16:21:20.254] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/preload/default/preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-10-23T16:21:20.257] [DEBUG] debug-file - default@PackageHap work[3] is dispatched.
+[2026-10-23T16:21:20.254] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-10-23T16:21:20.258] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.3564605712890625
+[2026-10-23T16:21:20.254] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.13600921630859375
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 243 ms 
+[2026-10-23T16:21:20.255] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 1 ms 
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/preload/default/preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.05432891845703125
+[2026-10-23T16:21:20.255] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 243 ms 
+[2026-10-23T16:21:20.255] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 1 ms 
+[2026-10-23T16:21:20.293] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 869548032,
+  heapTotal: 79708160,
+  heapUsed: 51480832,
+  external: 3817368,
+  arrayBuffers: 18671
+} os memoryUsage :15.865936279296875
+[2026-10-23T16:21:20.792] [DEBUG] debug-file - worker[8] has one work done.
+[2026-10-23T16:21:20.792] [DEBUG] debug-file - default@PackageHap work[3] done.
+[2026-10-23T16:21:20.793] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2026-10-23T16:21:20.800] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2026-10-23T16:21:20.798] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2026-10-23T16:21:20.792] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-10-23T16:21:20.796] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.41629791259765625
+[2026-10-23T16:21:20.801] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.09033966064453125
+[2026-10-23T16:21:20.798] [WARN] debug-file - Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+             If needed, configure the signingConfigs in /Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5.
+[2026-10-23T16:21:20.793] [INFO] debug-file - Finished :entry:default@PackageHap... after 503 ms 
+[2026-10-23T16:21:20.796] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 784 ms 
+[2026-10-23T16:21:20.801] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 789 ms 
+[2026-10-23T16:21:20.799] [DEBUG] debug-file - entry : default@SignHap cost memory 0.0892486572265625
+[2026-10-23T16:21:20.796] [INFO] debug-file - Finished :entry:default@PackingCheck... after 3 ms 
+[2026-10-23T16:21:20.801] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 1 ms 
+[2026-10-23T16:21:20.799] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 787 ms 
+[2026-10-23T16:21:20.801] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2026-10-23T16:21:20.799] [INFO] debug-file - Finished :entry:default@SignHap... after 1 ms 
+[2026-10-23T16:21:20.802] [DEBUG] debug-file - entry : assembleHap cost memory 0.01482391357421875
+[2026-10-23T16:21:20.802] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 790 ms 
+[2026-10-23T16:21:20.802] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2026-10-23T16:21:20.804] [INFO] debug-file - BUILD SUCCESSFUL in 4 s 792 ms 
+[2026-10-23T16:21:20.806] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:21:20.806] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/profile/main_pages.json cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/hvigor/hvigor-config.json5 cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5 cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/oh-package.json5 cache by regenerate.
+[2026-10-23T16:21:20.807] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/oh-package.json5 cache by regenerate.
+[2026-10-23T16:21:20.808] [DEBUG] debug-file - Incremental task entry:default@PreBuild post-execution cost:3 ms .
+[2026-10-23T16:21:20.808] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/ModuleInfo.ts cache.
+[2026-10-23T16:21:20.809] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2026-10-23T16:21:20.809] [DEBUG] debug-file - Update task entry:default@GenerateMetadata input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:21:20.809] [DEBUG] debug-file - Update task entry:default@GenerateMetadata output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/hap_metadata/default/output_metadata.json cache.
+[2026-10-23T16:21:20.810] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata post-execution cost:1 ms .
+[2026-10-23T16:21:20.810] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:21:20.810] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.810] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Update task entry:default@MergeProfile output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/merge_profile/default/module.json cache.
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Incremental task entry:default@MergeProfile post-execution cost:1 ms .
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/BuildProfile.ets cache.
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile post-execution cost:1 ms .
+[2026-10-23T16:21:20.811] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgContextInfo.json cache.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@GeneratePkgSdkInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgSdkInfo.json cache.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgSdkInfo post-execution cost:1 ms .
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build/cache/default/integrated_hsp/integratedHspCache.json cache.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@MakePackInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info cache.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo post-execution cost:1 ms .
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/syscap_tool cache by regenerate.
+[2026-10-23T16:21:20.812] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/device-define cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/syscap/default/rpcid.sc cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:2 ms .
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/merge_profile/default/module.json cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessProfile output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/process_profile/default/module.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile post-execution cost:1 ms .
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/oh-package.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/oh-package.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/router_map/default/temp-router-map.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/router_map/default/loader-router-map.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap post-execution cost:1 ms .
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/oh-package.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/oh-package.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/share_config/default/temp-share-config.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig post-execution cost:1 ms .
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/startup/default/startup_config.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resConfig.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/opt-compression.json cache.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Incremental task entry:default@ProcessResource post-execution cost:1 ms .
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5 cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/router_map/default/temp-router-map.json cache by regenerate.
+[2026-10-23T16:21:20.814] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/loader.json cache.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson post-execution cost:1 ms .
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build-profile.json5 cache by regenerate.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@ProcessLibs output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/libs/default cache.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs post-execution cost:1 ms .
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources cache by regenerate.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources cache by regenerate.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/process_profile/default/module.json cache by regenerate.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resConfig.json cache by regenerate.
+[2026-10-23T16:21:20.815] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default cache.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.h cache.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.ts cache.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default cache.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:2 ms .
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@DoNativeStrip input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/libs/default cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@DoNativeStrip output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/stripped_native_libs/default cache.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip post-execution cost:1 ms .
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5 cache by regenerate.
+[2026-10-23T16:21:20.816] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@BuildJS output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/js cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/stripped_native_libs/default cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/libs/default cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/patch/default/base_native_libs.json cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/patch/default/binxo_native_libs.json cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/module.json cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/package/default/module.json cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/stripped_native_libs/default cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/module.json cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources.index cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgSdkInfo.json cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/package/default/module.json cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets/sourceMaps.map cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-unsigned.hap cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/source_map/default/sourceMaps.map cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/mapping/sourceMaps.map cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@SignHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-unsigned.hap cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@SignHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-signed.hap cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets/sourceMaps.map cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/libs/default cache by regenerate.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/symbol cache.
+[2026-10-23T16:21:20.817] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:1 ms .
+[2026-10-23T16:21:20.824] [DEBUG] debug-file - Current worker pool is stopped or closed.
+[2026-10-23T16:21:20.824] [DEBUG] debug-file - Clear worker 0.
+[2026-10-23T16:21:20.824] [DEBUG] debug-file - Clear worker 1.
+[2026-10-23T16:21:20.825] [DEBUG] debug-file - Clear worker 7.
+[2026-10-23T16:21:20.825] [DEBUG] debug-file - Clear worker 4.
+[2026-10-23T16:21:20.825] [DEBUG] debug-file - Clear worker 8.
+[2026-10-23T16:21:20.825] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - worker[1] exits with exit code 1.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - worker[0] exits with exit code 1.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - Worker 1 has been cleared.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - Current busy worker size: 0.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - Worker 0 has been cleared.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:21:20.826] [DEBUG] debug-file - Current busy worker size: 0.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - worker[8] exits with exit code 1.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Worker 8 has been cleared.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current busy worker size: 0.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - worker[7] exits with exit code 1.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Worker 7 has been cleared.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current busy worker size: 0.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current worker pool is terminated.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current worker pool is terminated.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current worker pool is terminated.
+[2026-10-23T16:21:20.827] [DEBUG] debug-file - Current worker pool is terminated.
+[2026-10-23T16:21:20.830] [DEBUG] debug-file - worker[4] exits with exit code 1.
+[2026-10-23T16:21:20.830] [DEBUG] debug-file - Worker 4 has been cleared.
+[2026-10-23T16:21:20.830] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:21:20.830] [DEBUG] debug-file - Current busy worker size: 0.
+[2026-10-23T16:21:20.830] [DEBUG] debug-file - Current worker pool is terminated.
+[2026-10-23T16:22:18.363] [DEBUG] debug-file - env: nodejsVersion=v24.14.1
+[2026-10-23T16:22:18.374] [DEBUG] debug-file - env: daemon=true
+[2026-10-23T16:22:18.363] [DEBUG] debug-file - env: hvigor-config.json5 content = {
+  modelVersion: '5.0.0',
+  dependencies: {},
+  execution: {},
+  logging: {},
+  debugging: {},
+  nodeOptions: {}
+}
+[2026-10-23T16:22:18.660] [DEBUG] debug-file - hvigor java daemon: Starting java daemon. jvmXmxValue=512m, jarPath=/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/lib/hvigor-java-daemon.jar
+[2026-10-23T16:22:18.661] [DEBUG] debug-file - hvigor java daemon: Read cache file, 
+    port=45050, pid=85225, sessionId exists=true
+[2026-10-23T16:22:18.661] [DEBUG] debug-file - hvigor java daemon: Killing existing java daemon by pid=85225
+[2026-10-23T16:22:18.696] [DEBUG] debug-file - hvigor java daemon: tryConnect failed, Error: connect ECONNREFUSED 127.0.0.1:45050, will start new daemon
+[2026-10-23T16:22:18.699] [DEBUG] debug-file - java daemon started at port 45050 pid 76846
+[2026-10-23T16:22:18.714] [DEBUG] debug-file - session manager: set active socket. socketId=IwPqrlvOaUg0y8NpAAAB
+[2026-10-23T16:22:18.929] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:22:18.931] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2026-10-23T16:22:18.931] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2026-10-23T16:22:18.931] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2026-10-23T16:22:18.933] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2026-10-23T16:22:18.934] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-10-23T16:22:18.937] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-10-23T16:22:18.942] [DEBUG] debug-file - Cache service initialization finished in 5 ms 
+[2026-10-23T16:22:18.943] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:22:19.813] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:22:19.813] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:22:19.814] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:22:19.814] [DEBUG] debug-file - App plugin prepare start...
+[2026-10-23T16:22:19.814] [DEBUG] debug-file - App plugin prepare end...
+[2026-10-23T16:22:19.814] [DEBUG] debug-file - App plugin creating...
+[2026-10-23T16:22:19.888] [DEBUG] debug-file - App plugin register hook start...
+[2026-10-23T16:22:19.888] [DEBUG] debug-file - App plugin register hook end...
+[2026-10-23T16:22:19.888] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:22:19.889] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-10-23T16:22:19.889] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-10-23T16:22:19.889] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-10-23T16:22:19.889] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-10-23T16:22:19.889] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-10-23T16:22:19.890] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2026-10-23T16:22:19.891] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2026-10-23T16:22:19.891] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2026-10-23T16:22:19.892] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-10-23T16:22:19.906] [DEBUG] debug-file - Sdk init in 16 ms 
+[2026-10-23T16:22:19.909] [DEBUG] debug-file - Project task initialization takes 2 ms 
+[2026-10-23T16:22:19.909] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:22:19.909] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:22:19.909] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:22:19.909] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:22:19.912] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:22:19.912] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:22:19.912] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:22:19.912] [DEBUG] debug-file - Hap plugin creating...
+[2026-10-23T16:22:19.912] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/hooks/cangjie-register.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/strategy/stage-init-strategy.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/abstract-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/app-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2026-10-23T16:22:19.916] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:22:19.916] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:22:19.917] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - Module entry task initialization takes 2 ms 
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:22:19.920] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:22:19.946] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 27 ms 
+[2026-10-23T16:22:19.946] [DEBUG] debug-file - project has submodules:entry
+[2026-10-23T16:22:19.947] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-10-23T16:22:19.948] [DEBUG] debug-file - load to the disk finished
+[2026-10-23T16:22:19.948] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:22:19.949] [DEBUG] debug-file - Module ContractRadar Collected Dependency: 
+[2026-10-23T16:22:19.949] [DEBUG] debug-file - Module ContractRadar's total dependency: 0
+[2026-10-23T16:22:19.949] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:22:19.950] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-10-23T16:22:19.950] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-10-23T16:22:19.951] [DEBUG] debug-file - Configuration phase cost:1 s 9 ms 
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - Configuration task cost before running: 1 s 18 ms 
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - Executing task :entry:init
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - entry : init cost memory 0.027008056640625
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 18 ms 
+[2026-10-23T16:22:19.952] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - Executing task ::init
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - ContractRadar : init cost memory 0.01764678955078125
+[2026-10-23T16:22:19.952] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 18 ms 
+[2026-10-23T16:22:19.952] [INFO] debug-file - Finished ::init... after 1 ms 
+[2026-10-23T16:22:19.953] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:22:19.953] [DEBUG] debug-file - Obtain build option for module 'entry' target 'ohosTest'in this build.
+[2026-10-23T16:22:19.956] [DEBUG] debug-file - Cleanup worker 0.
+[2026-10-23T16:22:19.956] [DEBUG] debug-file - Cleanup worker 1.
+[2026-10-23T16:22:19.956] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - worker[0] exits with exit code 1.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - worker[1] exits with exit code 1.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - Worker 0 has been cleaned up.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - Current resident worker size: 0.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - Worker 1 has been cleaned up.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-10-23T16:22:20.024] [DEBUG] debug-file - Current resident worker size: 0.
+[2026-10-23T16:22:20.045] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"hvigor_failed","reason":"Server has disconnected."}
+[2026-10-23T16:22:20.046] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"CloseWatch","reason":"Server has disconnected."}
+[2026-10-23T16:22:20.046] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:22:20.047] [DEBUG] debug-file - ABORT_WORK sent to workers.
+[2026-10-23T16:22:20.047] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:25:16.001] [DEBUG] debug-file - session manager: set active socket. socketId=J-sVROjx_GPWguPVAAAD
+[2026-10-23T16:25:16.004] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:25:16.007] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-10-23T16:25:16.008] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-10-23T16:25:16.014] [DEBUG] debug-file - Cache service initialization finished in 6 ms 
+[2026-10-23T16:25:16.014] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:25:16.019] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:25:16.019] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:25:16.019] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:25:16.019] [DEBUG] debug-file - App plugin prepare start...
+[2026-10-23T16:25:16.019] [DEBUG] debug-file - App plugin prepare end...
+[2026-10-23T16:25:16.019] [DEBUG] debug-file - App plugin creating...
+[2026-10-23T16:25:16.021] [DEBUG] debug-file - App plugin register hook start...
+[2026-10-23T16:25:16.021] [DEBUG] debug-file - App plugin register hook end...
+[2026-10-23T16:25:16.021] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:25:16.022] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-10-23T16:25:16.022] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-10-23T16:25:16.022] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-10-23T16:25:16.022] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-10-23T16:25:16.022] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-10-23T16:25:16.023] [DEBUG] debug-file - /Volumes/ORICO/UndergraduateProject/ContractRadar/build/cache/default/remote_hsp/remoteHspCache.json not exists.
+[2026-10-23T16:25:16.024] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-10-23T16:25:16.039] [DEBUG] debug-file - Sdk init in 16 ms 
+[2026-10-23T16:25:16.040] [DEBUG] debug-file - Project task initialization takes 1 ms 
+[2026-10-23T16:25:16.040] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:25:16.040] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:25:16.040] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:25:16.040] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:25:16.042] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:25:16.042] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:25:16.042] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:25:16.042] [DEBUG] debug-file - Hap plugin creating...
+[2026-10-23T16:25:16.043] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/hooks/cangjie-register.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/strategy/stage-init-strategy.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/abstract-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/app-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:25:16.044] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:25:16.045] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2026-10-23T16:25:16.045] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-10-23T16:25:16.045] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-10-23T16:25:16.045] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:25:16.045] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:25:16.046] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:25:16.046] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:25:16.079] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 33 ms 
+[2026-10-23T16:25:16.079] [DEBUG] debug-file - project has submodules:entry
+[2026-10-23T16:25:16.080] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-10-23T16:25:16.081] [DEBUG] debug-file - load to the disk finished
+[2026-10-23T16:25:16.081] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:25:16.081] [DEBUG] debug-file - Module ContractRadar Collected Dependency: 
+[2026-10-23T16:25:16.081] [DEBUG] debug-file - Module ContractRadar's total dependency: 0
+[2026-10-23T16:25:16.081] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:25:16.081] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-10-23T16:25:16.082] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-10-23T16:25:16.082] [DEBUG] debug-file - Configuration phase cost:69 ms 
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - Configuration task cost before running: 76 ms 
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - Executing task :entry:init
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - entry : init cost memory 0.0177459716796875
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - runTaskFromQueue task cost before running: 76 ms 
+[2026-10-23T16:25:16.083] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - Executing task ::init
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - ContractRadar : init cost memory 0.0130462646484375
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - runTaskFromQueue task cost before running: 76 ms 
+[2026-10-23T16:25:16.083] [INFO] debug-file - Finished ::init... after 1 ms 
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:25:16.083] [DEBUG] debug-file - Obtain build option for module 'entry' target 'ohosTest'in this build.
+[2026-10-23T16:25:16.085] [DEBUG] debug-file - There's no busy workers and idle workers need cleanup.
+[2026-10-23T16:25:16.086] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-10-23T16:25:16.107] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"hvigor_failed","reason":"Server has disconnected."}
+[2026-10-23T16:25:16.107] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"CloseWatch","reason":"Server has disconnected."}
+[2026-10-23T16:25:16.108] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:25:16.108] [DEBUG] debug-file - ABORT_WORK sent to workers.
+[2026-10-23T16:25:16.108] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:26:00.635] [DEBUG] debug-file - session manager: set active socket. socketId=ztrzszQDYO51W0ZCAAAF
+[2026-10-23T16:26:00.637] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:26:00.639] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-10-23T16:26:00.640] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-10-23T16:26:00.644] [DEBUG] debug-file - Cache service initialization finished in 4 ms 
+[2026-10-23T16:26:00.644] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:26:00.648] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:26:00.648] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:26:00.648] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:26:00.648] [DEBUG] debug-file - App plugin prepare start...
+[2026-10-23T16:26:00.648] [DEBUG] debug-file - App plugin prepare end...
+[2026-10-23T16:26:00.648] [DEBUG] debug-file - App plugin creating...
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - App plugin register hook start...
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - App plugin register hook end...
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-10-23T16:26:00.650] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-10-23T16:26:00.651] [DEBUG] debug-file - /Volumes/ORICO/UndergraduateProject/ContractRadar/build/cache/default/remote_hsp/remoteHspCache.json not exists.
+[2026-10-23T16:26:00.651] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-10-23T16:26:00.664] [DEBUG] debug-file - Sdk init in 13 ms 
+[2026-10-23T16:26:00.665] [DEBUG] debug-file - Project task initialization takes 2 ms 
+[2026-10-23T16:26:00.665] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:26:00.665] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:26:00.665] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:26:00.666] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:26:00.667] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:26:00.667] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:26:00.667] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:26:00.667] [DEBUG] debug-file - Hap plugin creating...
+[2026-10-23T16:26:00.668] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/hooks/cangjie-register.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/strategy/stage-init-strategy.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/abstract-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/app-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2026-10-23T16:26:00.668] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:26:00.668] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:26:00.669] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:26:00.670] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:26:00.701] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 32 ms 
+[2026-10-23T16:26:00.701] [DEBUG] debug-file - project has submodules:entry
+[2026-10-23T16:26:00.702] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - load to the disk finished
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Module ContractRadar Collected Dependency: 
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Module ContractRadar's total dependency: 0
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-10-23T16:26:00.703] [DEBUG] debug-file - Configuration phase cost:60 ms 
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - Configuration task cost before running: 65 ms 
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - Executing task :entry:init
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - entry : init cost memory 0.01772308349609375
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - runTaskFromQueue task cost before running: 65 ms 
+[2026-10-23T16:26:00.704] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - Executing task ::init
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - ContractRadar : init cost memory 0.0130462646484375
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - runTaskFromQueue task cost before running: 65 ms 
+[2026-10-23T16:26:00.704] [INFO] debug-file - Finished ::init... after 1 ms 
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:26:00.704] [DEBUG] debug-file - Obtain build option for module 'entry' target 'ohosTest'in this build.
+[2026-10-23T16:26:00.705] [DEBUG] debug-file - There's no busy workers and idle workers need cleanup.
+[2026-10-23T16:26:00.706] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-10-23T16:26:00.720] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"hvigor_failed","reason":"Server has disconnected."}
+[2026-10-23T16:26:00.720] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"CloseWatch","reason":"Server has disconnected."}
+[2026-10-23T16:26:00.721] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:26:00.721] [DEBUG] debug-file - ABORT_WORK sent to workers.
+[2026-10-23T16:26:00.721] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:26:00.804] [DEBUG] debug-file - session manager: set active socket. socketId=_AYHi5xxUHAiH6uQAAAH
+[2026-10-23T16:26:00.805] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:26:00.806] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-10-23T16:26:00.806] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-10-23T16:26:00.807] [DEBUG] debug-file - Cache service initialization finished in 1 ms 
+[2026-10-23T16:26:00.808] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:26:00.809] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:26:00.809] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:26:00.809] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:26:00.809] [DEBUG] debug-file - App plugin prepare start...
+[2026-10-23T16:26:00.809] [DEBUG] debug-file - App plugin prepare end...
+[2026-10-23T16:26:00.809] [DEBUG] debug-file - App plugin creating...
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - App plugin register hook start...
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - App plugin register hook end...
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - /Volumes/ORICO/UndergraduateProject/ContractRadar/build/cache/default/remote_hsp/remoteHspCache.json not exists.
+[2026-10-23T16:26:00.810] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-10-23T16:26:00.819] [DEBUG] debug-file - Sdk init in 9 ms 
+[2026-10-23T16:26:00.819] [DEBUG] debug-file - Project task initialization takes 1 ms 
+[2026-10-23T16:26:00.819] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:26:00.819] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:26:00.819] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+[2026-10-23T16:26:00.819] [DEBUG] debug-file - hvigorfile, resolving /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:26:00.820] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-10-23T16:26:00.820] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-10-23T16:26:00.820] [DEBUG] debug-file - Starting plugin build process
+[2026-10-23T16:26:00.820] [DEBUG] debug-file - Hap plugin creating...
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/hooks/cangjie-register.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/strategy/stage-init-strategy.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/abstract-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/builder/app-plugin-builder.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Volumes/ORICO/UndergraduateProject/ContractRadar/hvigorfile.ts
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Target 'default' config initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-10-23T16:26:00.821] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - Plugin build process completed
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - hvigorfile, begin to bind custom plugins...
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - hvigorfile, no custom plugins were found in /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:26:00.822] [DEBUG] debug-file - hvigorfile, resolve finished /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/hvigorfile.ts
+[2026-10-23T16:26:00.845] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 24 ms 
+[2026-10-23T16:26:00.845] [DEBUG] debug-file - project has submodules:entry
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - load to the disk finished
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - Module ContractRadar Collected Dependency: 
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - Module ContractRadar's total dependency: 0
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-10-23T16:26:00.846] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-10-23T16:26:00.847] [DEBUG] debug-file - Configuration phase cost:40 ms 
+[2026-10-23T16:26:00.847] [DEBUG] debug-file - Configuration task cost before running: 42 ms 
+[2026-10-23T16:26:00.849] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2026-10-23T16:26:00.852] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.853] [DEBUG] debug-file - entry:default@PreBuild is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5' has been changed.
+[2026-10-23T16:26:00.853] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.914] [DEBUG] debug-file - current product is not Atomic service.
+[2026-10-23T16:26:00.914] [DEBUG] debug-file - Use tool [darwin: JAVA_HOME, CLASSPATH]
+ [
+  {
+    JAVA_HOME: '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home'
+  },
+  { CLASSPATH: undefined }
+]
+[2026-10-23T16:26:00.914] [DEBUG] debug-file - Use tool [darwin: NODE_HOME]
+ [
+  {
+    NODE_HOME: '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/node'
+  }
+]
+[2026-10-23T16:26:00.915] [DEBUG] debug-file - entry : default@PreBuild cost memory 15.450904846191406
+[2026-10-23T16:26:00.915] [DEBUG] debug-file - runTaskFromQueue task cost before running: 109 ms 
+[2026-10-23T16:26:00.915] [INFO] debug-file - Finished :entry:default@PreBuild... after 66 ms 
+[2026-10-23T16:26:00.915] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2026-10-23T16:26:00.915] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.915] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.046142578125
+[2026-10-23T16:26:00.915] [DEBUG] debug-file - runTaskFromQueue task cost before running: 110 ms 
+[2026-10-23T16:26:00.915] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2026-10-23T16:26:00.916] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2026-10-23T16:26:00.916] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.916] [DEBUG] debug-file - entry:default@GenerateMetadata is not up-to-date, since the task snapshots are different.
+[2026-10-23T16:26:00.916] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.917] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.0772247314453125
+[2026-10-23T16:26:00.917] [DEBUG] debug-file - runTaskFromQueue task cost before running: 111 ms 
+[2026-10-23T16:26:00.917] [INFO] debug-file - Finished :entry:default@GenerateMetadata... after 2 ms 
+[2026-10-23T16:26:00.917] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2026-10-23T16:26:00.917] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.0152587890625
+[2026-10-23T16:26:00.917] [DEBUG] debug-file - runTaskFromQueue task cost before running: 112 ms 
+[2026-10-23T16:26:00.917] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2026-10-23T16:26:00.917] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - entry:default@MergeProfile is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5' has been changed.
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Change app api release type with 'Release'
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Change app compile API version with '26.0.0.105'
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Change app target API version with '50000012'
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Change app minimum API version with '50000012'
+[2026-10-23T16:26:00.918] [DEBUG] debug-file - Use cli appEnvironment
+[2026-10-23T16:26:00.929] [DEBUG] debug-file - entry : default@MergeProfile cost memory -5.492912292480469
+[2026-10-23T16:26:00.929] [DEBUG] debug-file - runTaskFromQueue task cost before running: 124 ms 
+[2026-10-23T16:26:00.929] [INFO] debug-file - Finished :entry:default@MergeProfile... after 12 ms 
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - entry:default@CreateBuildProfile is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5' has been changed.
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.1198883056640625
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - runTaskFromQueue task cost before running: 125 ms 
+[2026-10-23T16:26:00.930] [INFO] debug-file - Finished :entry:default@CreateBuildProfile... after 1 ms 
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.018096923828125
+[2026-10-23T16:26:00.930] [DEBUG] debug-file - runTaskFromQueue task cost before running: 125 ms 
+[2026-10-23T16:26:00.931] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2026-10-23T16:26:00.931] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2026-10-23T16:26:00.934] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.934] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.32379150390625
+[2026-10-23T16:26:00.934] [DEBUG] debug-file - runTaskFromQueue task cost before running: 129 ms 
+[2026-10-23T16:26:00.934] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 4 ms 
+[2026-10-23T16:26:00.934] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgSdkInfo
+[2026-10-23T16:26:00.935] [DEBUG] debug-file - Task 'entry:default@GeneratePkgSdkInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.935] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgSdkInfo pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.935] [DEBUG] debug-file - entry : default@GeneratePkgSdkInfo cost memory 0.1459197998046875
+[2026-10-23T16:26:00.935] [INFO] debug-file - UP-TO-DATE :entry:default@GeneratePkgSdkInfo...  
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file '/Volumes/ORICO/UndergraduateProject/ContractRadar/build/cache/default/integrated_hsp/integratedHspCache.json' does not exist.
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.0541534423828125
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - runTaskFromQueue task cost before running: 131 ms 
+[2026-10-23T16:26:00.936] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.01502227783203125
+[2026-10-23T16:26:00.936] [DEBUG] debug-file - runTaskFromQueue task cost before running: 131 ms 
+[2026-10-23T16:26:00.936] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2026-10-23T16:26:00.937] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2026-10-23T16:26:00.937] [DEBUG] debug-file - entry:default@MakePackInfo is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5' has been changed.
+[2026-10-23T16:26:00.937] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.937] [DEBUG] debug-file - Module Pack Info:  {
+  summary: {
+    app: { bundleName: 'c***r', bundleType: 'app', version: [Object] },
+    modules: [ [Object] ]
+  },
+  packages: [
+    {
+      deviceType: [Array],
+      moduleType: 'entry',
+      deliveryWithInstall: true,
+      name: 'entry-default'
+    }
+  ]
+}
+[2026-10-23T16:26:00.937] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.1646881103515625
+[2026-10-23T16:26:00.937] [DEBUG] debug-file - runTaskFromQueue task cost before running: 132 ms 
+[2026-10-23T16:26:00.937] [INFO] debug-file - Finished :entry:default@MakePackInfo... after 1 ms 
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the input file '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/syscap_tool' has been changed.
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.0804290771484375
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - runTaskFromQueue task cost before running: 133 ms 
+[2026-10-23T16:26:00.938] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 1 ms 
+[2026-10-23T16:26:00.938] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2026-10-23T16:26:00.939] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:00.939] [DEBUG] debug-file - entry:default@ProcessProfile is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/merge_profile/default/module.json' has been changed.
+[2026-10-23T16:26:00.939] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2026-10-23T16:26:00.939] [DEBUG] debug-file - [
+  '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/tools/node/bin/node',
+  '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader/bin/ark/ts2abc.js',
+  '--target-api-version',
+  '12',
+  '--target-api-sub-version',
+  'beta1'
+]
+[2026-10-23T16:26:01.006] [DEBUG] debug-file - 12.0.2.0
+[2026-10-23T16:26:01.006] [DEBUG] debug-file - No need to add fake ui ability because of not in preview process.
+[2026-10-23T16:26:01.007] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.39310455322265625
+[2026-10-23T16:26:01.007] [DEBUG] debug-file - runTaskFromQueue task cost before running: 201 ms 
+[2026-10-23T16:26:01.007] [INFO] debug-file - Finished :entry:default@ProcessProfile... after 69 ms 
+[2026-10-23T16:26:01.007] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.49298095703125
+[2026-10-23T16:26:01.008] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.099334716796875
+[2026-10-23T16:26:01.008] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/startup/default/startup_config.json' does not exist.
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.09281158447265625
+[2026-10-23T16:26:01.008] [DEBUG] debug-file - runTaskFromQueue task cost before running: 203 ms 
+[2026-10-23T16:26:01.009] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2026-10-23T16:26:01.009] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2026-10-23T16:26:01.009] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.02112579345703125
+[2026-10-23T16:26:01.009] [DEBUG] debug-file - runTaskFromQueue task cost before running: 204 ms 
+[2026-10-23T16:26:01.009] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2026-10-23T16:26:01.010] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2026-10-23T16:26:01.010] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2026-10-23T16:26:01.010] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.011] [DEBUG] debug-file - entry:default@ProcessResource is not up-to-date, since the task snapshots are different.
+[2026-10-23T16:26:01.011] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 2 ms .
+[2026-10-23T16:26:01.012] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.1562957763671875
+[2026-10-23T16:26:01.012] [DEBUG] debug-file - runTaskFromQueue task cost before running: 207 ms 
+[2026-10-23T16:26:01.012] [INFO] debug-file - Finished :entry:default@ProcessResource... after 3 ms 
+[2026-10-23T16:26:01.013] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2026-10-23T16:26:01.013] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.014] [DEBUG] debug-file - entry:default@GenerateLoaderJson is not up-to-date, since the task snapshots are different.
+[2026-10-23T16:26:01.014] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.015] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.5164794921875
+[2026-10-23T16:26:01.015] [DEBUG] debug-file - runTaskFromQueue task cost before running: 210 ms 
+[2026-10-23T16:26:01.015] [INFO] debug-file - Finished :entry:default@GenerateLoaderJson... after 3 ms 
+[2026-10-23T16:26:01.015] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2026-10-23T16:26:01.016] [DEBUG] debug-file - Task 'entry:default@ProcessLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.016] [DEBUG] debug-file - entry:default@ProcessLibs is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5' has been changed.
+[2026-10-23T16:26:01.016] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.018] [DEBUG] debug-file - Worker dispatch failed, running processLibs on main thread.
+[2026-10-23T16:26:01.019] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.4039306640625
+[2026-10-23T16:26:01.019] [DEBUG] debug-file - runTaskFromQueue task cost before running: 213 ms 
+[2026-10-23T16:26:01.019] [INFO] debug-file - Finished :entry:default@ProcessLibs... after 4 ms 
+[2026-10-23T16:26:01.019] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2026-10-23T16:26:01.019] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2026-10-23T16:26:01.025] [DEBUG] debug-file - entry:default@CompileResource is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/process_profile/default/module.json' has been changed.
+[2026-10-23T16:26:01.025] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 6 ms .
+[2026-10-23T16:26:01.037] [DEBUG] debug-file - Use tool [/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/restool]
+ [
+  '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/restool',
+  '-l',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resConfig.json'
+]
+[2026-10-23T16:26:01.037] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 181862400,
+  heapTotal: 180928512,
+  heapUsed: 135119120,
+  external: 4313823,
+  arrayBuffers: 1679577
+} os memoryUsage :15.922088623046875
+[2026-10-23T16:26:01.056] [DEBUG] debug-file - Info: Pack: normal pack mode
+
+[2026-10-23T16:26:01.151] [DEBUG] debug-file - Info: hardware concurrency count is : 10
+Info: thread count is : 10
+
+[2026-10-23T16:26:01.151] [DEBUG] debug-file - Info: thread pool is started
+
+[2026-10-23T16:26:01.151] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-10-23T16:26:01.154] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-10-23T16:26:01.156] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-10-23T16:26:01.158] [DEBUG] debug-file - 10-23 16:26:01.157 79360 36734329 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png.
+
+[2026-10-23T16:26:01.159] [DEBUG] debug-file - 10-23 16:26:01.159 79360 36734329 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-10-23T16:26:01.159] [DEBUG] debug-file - 10-23 16:26:01.159 79360 36734329 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png.
+10-23 16:26:01.159 79360 36734329 E C01400/ImageTranscoderUtils: ImageFilter IN /Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png
+
+[2026-10-23T16:26:01.167] [DEBUG] debug-file - 10-23 16:26:01.167 79360 36734329 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+
+[2026-10-23T16:26:01.167] [DEBUG] debug-file - Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = /Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources/base/media/app_icon.png
+
+[2026-10-23T16:26:01.167] [DEBUG] debug-file - 10-23 16:26:01.167 79360 36734329 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png.
+
+[2026-10-23T16:26:01.167] [DEBUG] debug-file - 10-23 16:26:01.167 79360 36734329 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+10-23 16:26:01.167 79360 36734329 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png.
+
+[2026-10-23T16:26:01.167] [DEBUG] debug-file - 10-23 16:26:01.167 79360 36734329 E C01400/ImageTranscoderUtils: ImageFilter IN /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png
+
+[2026-10-23T16:26:01.168] [DEBUG] debug-file - 10-23 16:26:01.168 79360 36734329 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png
+
+[2026-10-23T16:26:01.170] [DEBUG] debug-file - 10-23 16:26:01.170 79360 36734329 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png.
+10-23 16:26:01.170 79360 36734329 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-10-23T16:26:01.170] [DEBUG] debug-file - 10-23 16:26:01.170 79360 36734329 I C01400/SvgDecodeUtils: SvgDecodeUtils::IsSvgFormat probe svg format, path:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png.
+
+[2026-10-23T16:26:01.170] [DEBUG] debug-file - 10-23 16:26:01.170 79360 36734329 E C01400/ImageTranscoderUtils: ImageFilter IN /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png
+
+[2026-10-23T16:26:01.170] [DEBUG] debug-file - 10-23 16:26:01.170 79360 36734329 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+
+[2026-10-23T16:26:01.170] [DEBUG] debug-file - Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png
+
+[2026-10-23T16:26:01.171] [DEBUG] debug-file - Info: can't scale media json file.
+
+[2026-10-23T16:26:01.172] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/background.png
+
+[2026-10-23T16:26:01.172] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/foreground.png
+
+[2026-10-23T16:26:01.172] [DEBUG] debug-file - Warning: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/media/layered_image.json is not png format
+
+[2026-10-23T16:26:01.172] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2026-10-23T16:26:01.172] [DEBUG] debug-file - Info: thread pool is stopped
+
+[2026-10-23T16:26:01.175] [DEBUG] debug-file - entry : default@CompileResource cost memory -21.519142150878906
+[2026-10-23T16:26:01.175] [DEBUG] debug-file - runTaskFromQueue task cost before running: 370 ms 
+[2026-10-23T16:26:01.175] [INFO] debug-file - Finished :entry:default@CompileResource... after 156 ms 
+[2026-10-23T16:26:01.175] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2026-10-23T16:26:01.175] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/binxo/default' from 'doBinxoNativeLibs' is not exists, just ignore.
+[2026-10-23T16:26:01.176] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.176] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.176] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.07849884033203125
+[2026-10-23T16:26:01.176] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2026-10-23T16:26:01.176] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2026-10-23T16:26:01.177] [DEBUG] debug-file - obfuscationOptions: undefined
+[2026-10-23T16:26:01.177] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.178] [DEBUG] debug-file - entry:default@CompileArkTS is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default' has been changed.
+[2026-10-23T16:26:01.178] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.180] [DEBUG] debug-file - build config:
+[2026-10-23T16:26:01.180] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile',
+  etsLoaderPath: '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader',
+  modulePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: '/Volumes/ORICO/UndergraduateProject/ContractRadar',
+  compileSdkVersion: 26,
+  compatibleSdkVersion: 12,
+  originCompatibleSdkVersion: '5.0.0(12)',
+  compatibleSdkVersionStage: 'beta1',
+  bundleName: 'c***r',
+  etsLoaderVersion: '26.0.0.105',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: 'bc7948d6de0c107dc6217e0e8913cde2d7e8ca3ca8b2f168466c4e7b88ed6e19',
+  externalApiPaths: [
+    '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets'
+  ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 26,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build',
+  buildCacheProjectDir: '/Volumes/ORICO/UndergraduateProject/ContractRadar',
+  deviceTypes: [ 'phone', 'tablet', '2in1' ],
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: [ [Object] ], definePermissions: undefined },
+  useGetCurrentBundleName: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: false,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  depName2OhExports: {},
+  rootPathSet: [ '/Volumes/ORICO/UndergraduateProject/ContractRadar' ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useUnifiedAst: false,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    skipOhModulesLint: false,
+    enableStrictCheckOHModule: false,
+    disableSendableCheckRules: [],
+    useDeclarationFileSignature: false,
+    customizedOptions: undefined,
+    integratedHsp: false,
+    tsImportSoCheck: false,
+    isPreloadSoEnabled: false
+  },
+  executionMode: 'memory',
+  arkCompileCachePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/default/default@CompileArkTS/esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/har_duplicate/default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  skipOhModulesLint: false,
+  enableStrictCheckOHModule: false,
+  disableSendableCheckRules: [],
+  useDeclarationFileSignature: false,
+  customizedOptions: undefined,
+  integratedHsp: false,
+  tsImportSoCheck: false,
+  isPreloadSoEnabled: false,
+  strictMode: undefined,
+  useNormalizedOHMUrl: false,
+  caseSensitiveCheck: false,
+  strictCheckerOnly: false,
+  aceModuleJsonPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ark_module.json',
+  appResource: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ResourceTable.txt',
+  rawFileResource: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/rawfile',
+  resourceTableHash: '970569da751bf85076aa3ca6319ee3f7ae91e96fe595039f7cd038f91d8d7f76',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:26:26.0.0.105:Release',
+  aceModuleRoot: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/supervisual',
+  aceBuildJson: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/loader.json',
+  cachePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/cache/default/default@CompileArkTS/esmodule/debug',
+  aceModuleBuild: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  resourceTableTs: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.ts',
+  moduleMetaInfoFiles: [
+    {
+      filePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.ts',
+      ohmurl: 'com.example.contractradar/entry/build/generated/r/ResourceTable'
+    }
+  ],
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main': {
+      moduleName: 'entry',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    },
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/ohosTest': {
+      moduleName: 'entry_test',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    },
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry': {
+      moduleName: 'entry',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    },
+    '/Volumes/ORICO/UndergraduateProject/ContractRadar': {
+      moduleName: 'ContractRadar',
+      modulePkgPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar',
+      belongProjectPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar'
+    }
+  },
+  pkgJsonFileHash: '55a29fed45a3da94c4d401e6dde20500796c9485ab825fc28b70b90f63ef42e5',
+  allModulePaths: [ '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5',
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: true,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/preload/default/preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [ '../*', '../../../build/default/generated/profile/default/*' ]
+  },
+  collectImportersConfig: undefined
+}
+[2026-10-23T16:26:01.180] [DEBUG] debug-file - Compile arkts with external api path: /Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - before submitting ArkTS compile task to worker pool, config.buildDir: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - default@CompileArkTS work[0] is submitted.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - default@CompileArkTS work[0] is pushed to ready queue.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2026-10-23T16:26:01.181] [DEBUG] debug-file - Create  resident worker with id: 4.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - default@CompileArkTS work[0] has been dispatched to worker[4].
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - default@CompileArkTS work[0] is dispatched.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - CopyResources startTime: 1113673688228000
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - default@CompileArkTS work[1] is submitted.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - default@CompileArkTS work[1] is pushed to ready queue.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - Create  resident worker with id: 8.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - default@CompileArkTS work[1] has been dispatched to worker[8].
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - default@CompileArkTS work[1] is dispatched.
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 1.2988739013671875
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2026-10-23T16:26:01.184] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.11792755126953125
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - runTaskFromQueue task cost before running: 379 ms 
+[2026-10-23T16:26:01.185] [INFO] debug-file - Finished :entry:default@BuildJS... after 1 ms 
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/binxo/default' from 'cacheBinxoNativeLibs' is not exists, just ignore.
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
+[2026-10-23T16:26:01.185] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.0890350341796875
+[2026-10-23T16:26:01.185] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2026-10-23T16:26:01.587] [DEBUG] debug-file - worker[8] has one work done.
+[2026-10-23T16:26:01.587] [DEBUG] debug-file - CopyResources is end, endTime: 1113674091390333
+[2026-10-23T16:26:01.587] [DEBUG] debug-file - default@CompileArkTS work[1] done.
+[2026-10-23T16:26:01.587] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-10-23T16:26:03.817] [WARN] debug-file - [33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/service/AiService.ets:147:42
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/service/ClipboardService.ets:5:42
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:85:21
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:106:21
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:112:21
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:171:5
+ 'AlertDialog' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:171:17
+ 'show' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:222:20
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:222:20
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:235:20
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:237:20
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:371:30
+ 'showToast' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:487:13
+ 'AlertDialog' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets/pages/Index.ets:487:25
+ 'show' has been deprecated.
+[39m[39m
+
+[2026-10-23T16:26:03.817] [DEBUG] debug-file - Ark compile task finished.finished time is 1113676321782250
+[2026-10-23T16:26:03.817] [DEBUG] debug-file - worker[4] has one work done.
+[2026-10-23T16:26:03.818] [DEBUG] debug-file - default@CompileArkTS work[0] done.
+[2026-10-23T16:26:03.818] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2026-10-23T16:26:03.818] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 1 s 589 ms 
+[2026-10-23T16:26:03.819] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2026-10-23T16:26:03.819] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/preload/default/preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 2 ms 
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - entry:default@GeneratePkgModuleJson is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/module.json' has been changed.
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 1 ms .
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.15439605712890625
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 15 ms 
+[2026-10-23T16:26:03.820] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 2 ms 
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - File: '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/preload/default/preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2026-10-23T16:26:03.820] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.05150604248046875
+[2026-10-23T16:26:03.821] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 15 ms 
+[2026-10-23T16:26:03.821] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 1 ms 
+[2026-10-23T16:26:03.821] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - entry:default@PackageHap is not up-to-date, since the input file '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info' has been changed.
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 1 ms .
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - Use tool [/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/lib/app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=utf-8',
+  '-jar',
+  '/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/lib/app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/stripped_native_libs/default',
+  '--json-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/package/default/module.json',
+  '--resources-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources',
+  '--index-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources.index',
+  '--pack-info-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info',
+  '--out-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-unsigned.hap',
+  '--ets-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets',
+  '--pkg-sdk-info-path',
+  '/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgSdkInfo.json'
+]
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - default@PackageHap work[2] is submitted.
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - default@PackageHap work[2] is pushed to ready queue.
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - default@PackageHap work[2] has been dispatched to worker[8].
+[2026-10-23T16:26:03.822] [DEBUG] debug-file - default@PackageHap work[2] is dispatched.
+[2026-10-23T16:26:03.824] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.343841552734375
+[2026-10-23T16:26:03.851] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 670760960,
+  heapTotal: 79970304,
+  heapUsed: 51483280,
+  external: 3817368,
+  arrayBuffers: 18671
+} os memoryUsage :15.875839233398438
+[2026-10-23T16:26:04.222] [DEBUG] debug-file - worker[8] has one work done.
+[2026-10-23T16:26:04.222] [DEBUG] debug-file - default@PackageHap work[2] done.
+[2026-10-23T16:26:04.222] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-10-23T16:26:04.222] [INFO] debug-file - Finished :entry:default@PackageHap... after 376 ms 
+[2026-10-23T16:26:04.223] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2026-10-23T16:26:04.224] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.4105224609375
+[2026-10-23T16:26:04.224] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 419 ms 
+[2026-10-23T16:26:04.224] [INFO] debug-file - Finished :entry:default@PackingCheck... after 2 ms 
+[2026-10-23T16:26:04.225] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2026-10-23T16:26:04.225] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the input file '/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.cer' has been changed.
+[2026-10-23T16:26:04.225] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 1 ms .
+[2026-10-23T16:26:04.612] [DEBUG] debug-file - java daemon socket received message:{"code":0,"message":"verify profile success"}
+[2026-10-23T16:26:04.614] [DEBUG] debug-file - java daemon socket close code:1000 reason:close by user
+[2026-10-23T16:26:04.793] [DEBUG] debug-file - java daemon socket received message:{"code":0,"message":"sign app success"}
+[2026-10-23T16:26:04.794] [DEBUG] debug-file - entry : default@SignHap cost memory 0.8556289672851562
+[2026-10-23T16:26:04.794] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 988 ms 
+[2026-10-23T16:26:04.794] [INFO] debug-file - Finished :entry:default@SignHap... after 569 ms 
+[2026-10-23T16:26:04.794] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2026-10-23T16:26:04.795] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.078277587890625
+[2026-10-23T16:26:04.795] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 989 ms 
+[2026-10-23T16:26:04.795] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 1 ms 
+[2026-10-23T16:26:04.795] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2026-10-23T16:26:04.795] [DEBUG] debug-file - entry : assembleHap cost memory 0.01523590087890625
+[2026-10-23T16:26:04.795] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 989 ms 
+[2026-10-23T16:26:04.795] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2026-10-23T16:26:04.795] [INFO] debug-file - BUILD SUCCESSFUL in 3 s 990 ms 
+[2026-10-23T16:26:04.795] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache from map.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build-profile.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources/base/profile/main_pages.json cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/hvigor/hvigor-config.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/oh-package.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@PreBuild input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/oh-package.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@PreBuild post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/ModuleInfo.ts cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@GenerateMetadata input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@GenerateMetadata output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/hap_metadata/default/output_metadata.json cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache from map.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MergeProfile output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/merge_profile/default/module.json cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@MergeProfile post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache from map.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/BuildProfile.ets cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgContextInfo.json cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgSdkInfo is up-to-date.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build/cache/default/integrated_hsp/integratedHspCache.json cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/app.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/module.json5 cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache from map.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@MakePackInfo output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/syscap_tool cache from map.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Volumes/ORICO/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/device-define cache by regenerate.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/syscap/default/rpcid.sc cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@ProcessProfile input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/merge_profile/default/module.json cache from map.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Update task entry:default@ProcessProfile output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/process_profile/default/module.json cache.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile post-execution cost:1 ms .
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2026-10-23T16:26:04.796] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/startup/default/startup_config.json cache.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resConfig.json cache.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/opt-compression.json cache.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Incremental task entry:default@ProcessResource post-execution cost:1 ms .
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5 cache by regenerate.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/router_map/default/temp-router-map.json cache by regenerate.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/loader.json cache.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson post-execution cost:1 ms .
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/build-profile.json5 cache from map.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build-profile.json5 cache by regenerate.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@ProcessLibs output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/libs/default cache.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs post-execution cost:1 ms .
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/resources cache by regenerate.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/AppScope/resources cache by regenerate.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/process_profile/default/module.json cache from map.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@CompileResource input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resConfig.json cache by regenerate.
+[2026-10-23T16:26:04.797] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default cache.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.h cache.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default/ResourceTable.ts cache.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileResource output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/r/default cache.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:1 ms .
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default cache from map.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/main/ets cache by regenerate.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/src/mock/mock-config.json5 cache by regenerate.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets cache.
+[2026-10-23T16:26:04.798] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:1 ms .
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@BuildJS output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/js cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:1 ms .
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/module.json cache from map.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/package/default/module.json cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:1 ms .
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/pack.info cache from map.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/stripped_native_libs/default cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/module.json cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/res/default/resources.index cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader/default/pkgSdkInfo.json cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/package/default/module.json cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets/sourceMaps.map cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-unsigned.hap cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/source_map/default/sourceMaps.map cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/mapping/sourceMaps.map cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:1 ms .
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@SignHap input file:/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.cer cache from map.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@SignHap input file:/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.p7b cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@SignHap input file:/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.p12 cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@SignHap input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-unsigned.hap cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@SignHap output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/entry-default-signed.hap cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/loader_out/default/ets/sourceMaps.map cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/intermediates/libs/default cache by regenerate.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:/Volumes/ORICO/UndergraduateProject/ContractRadar/entry/build/default/outputs/default/symbol cache.
+[2026-10-23T16:26:04.799] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:1 ms .
+[2026-10-23T16:26:04.805] [DEBUG] debug-file - Cleanup worker 8.
+[2026-10-23T16:26:04.805] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-10-23T16:26:04.805] [DEBUG] debug-file - java daemon socket close code:1000 reason:close by user
+[2026-10-23T16:26:04.808] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"hvigor_failed","reason":"Server has disconnected."}
+[2026-10-23T16:26:04.808] [DEBUG] debug-file - session manager: send message to worker process. WorkerThreadId: 0, data: {"type":"CloseWatch","reason":"Server has disconnected."}
+[2026-10-23T16:26:04.807] [DEBUG] debug-file - worker[8] exits with exit code 1.
+[2026-10-23T16:26:04.807] [DEBUG] debug-file - Worker 8 has been cleaned up.
+[2026-10-23T16:26:04.807] [DEBUG] debug-file - Current idle worker size: 1.
+[2026-10-23T16:26:04.807] [DEBUG] debug-file - Current resident worker size: 1.
+[2026-10-23T16:26:04.808] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-10-23T16:26:04.808] [DEBUG] debug-file - ABORT_WORK sent to workers.
+[2026-10-23T16:26:04.809] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.

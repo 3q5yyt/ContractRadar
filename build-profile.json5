@@ -1,0 +1,50 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B903213BC23519D564D997FE2FC7492EA0B5FB4BF2952B0DD86490D37ED9EC8045F23BBA59A9816",
+          "profile": "/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/mac/.ohos/config/default_ContractRadar_Cj2g2ByaR4PyU_OLt7o8EjGIvXh2Z6ox7pZISykYXwY=.p12",
+          "storePassword": "0000001B6DA0DF175D3687EBA08D50240F7374B6BF6DFC5E62DD05EE199ADA14BAC2E6B0EF5D6F2CB29D96"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "targetSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Contract Radar module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Rental contract risk review"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Contract Radar"
+    }
+  ]
+}
