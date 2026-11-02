@@ -228,6 +228,33 @@ struct Index {
     return this.analysis.risks.filter((risk: RiskItem) => this.acceptedRiskIds.indexOf(risk.id) >= 0);
   }
 
+  getTopRisks(limit: number): RiskItem[] {
+    const sorted: RiskItem[] = this.analysis.risks.slice();
+    sorted.sort((a: RiskItem, b: RiskItem) => {
+      const weightA = a.level === 'high' ? 3 : (a.level === 'medium' ? 2 : 1);
+      const weightB = b.level === 'high' ? 3 : (b.level === 'medium' ? 2 : 1);
+      if (weightA !== weightB) {
+        return weightB - weightA;
+      }
+      return b.scoreImpact - a.scoreImpact;
+    });
+    return sorted.slice(0, limit);
+  }
+
+  getUniqueLegalBases(risks: RiskItem[]): LegalBasis[] {
+    const result: LegalBasis[] = [];
+    const seen: string[] = [];
+    for (const risk of risks) {
+      for (const basisId of risk.legalBasisIds) {
+        if (seen.indexOf(basisId) < 0) {
+          seen.push(basisId);
+          result.push(getLegalBasis(basisId));
+        }
+      }
+    }
+    return result;
+  }
+
   getCurrentScore(): number {
     let score = this.analysis.overallScore;
     for (const risk of this.analysis.risks) {
@@ -1322,35 +1349,258 @@ struct Index {
       this.TopBar('风险报告', true)
       Scroll() {
         Column() {
-          Text('签前风险报告')
-            .fontSize(20)
+          Column() {
+            Row() {
+              Text('签前风险报告')
+                .fontSize(22)
+                .fontWeight(FontWeight.Bold)
+                .fontColor('#FFFFFF')
+              Blank()
+              Text(this.analysis.source === 'api' ? 'AI 实时' : '示例')
+                .fontSize(9)
+                .fontColor('#FFFFFF')
+                .backgroundColor(this.analysis.source === 'api' ? '#2E7D5B' : '#2A4A6A')
+                .padding({ left: 6, right: 6, top: 3, bottom: 3 })
+                .borderRadius(4)
+            }
+            .width('100%')
+            Text(this.contract.name)
+              .fontSize(13)
+              .fontColor('#B9C9DC')
+              .margin({ top: 8 })
+            Text('分析时间 ' + this.analysis.analyzedAt)
+              .fontSize(10)
+              .fontColor('#8FA6BC')
+              .margin({ top: 4 })
+
+            Row() {
+              Column() {
+                Text(this.analysis.overallScore.toString())
+                  .fontSize(34)
+                  .fontWeight(FontWeight.Bold)
+                  .fontColor('#FFFFFF')
+                Text('分析时')
+                  .fontSize(10)
+                  .fontColor('#B9C9DC')
+              }
+              .alignItems(HorizontalAlign.Start)
+              Text('→')
+                .fontSize(18)
+                .fontColor('#8FA6BC')
+                .margin({ left: 14, right: 14 })
+              Column() {
+                Text(this.getCurrentScore().toString())
+                  .fontSize(34)
+                  .fontWeight(FontWeight.Bold)
+                  .fontColor('#FFFFFF')
+                Text('当前')
+                  .fontSize(10)
+                  .fontColor('#B9C9DC')
+              }
+              .alignItems(HorizontalAlign.Start)
+              Blank()
+              Column() {
+                Text(this.acceptedRiskIds.length.toString())
+                  .fontSize(24)
+                  .fontWeight(FontWeight.Bold)
+                  .fontColor('#FFFFFF')
+                Text('已接受修改')
+                  .fontSize(10)
+                  .fontColor('#B9C9DC')
+              }
+              .alignItems(HorizontalAlign.End)
+            }
+            .width('100%')
+            .alignItems(VerticalAlign.Bottom)
+            .margin({ top: 18 })
+          }
+          .width('100%')
+          .backgroundColor(COLOR_NAVY)
+          .padding(18)
+          .borderRadius(18)
+          .alignItems(HorizontalAlign.Start)
+
+          Column() {
+            Text('总体结论')
+              .fontSize(15)
+              .fontWeight(FontWeight.Medium)
+              .fontColor(COLOR_TEXT)
+            Text(this.analysis.summary)
+              .fontSize(12)
+              .fontColor(COLOR_SECONDARY)
+              .lineHeight(19)
+              .margin({ top: 6 })
+            Row() {
+              Text('高 ' + this.analysis.highCount.toString())
+                .fontSize(10)
+                .fontColor(COLOR_RED)
+                .backgroundColor(COLOR_RED_BG)
+                .padding({ left: 6, right: 6, top: 3, bottom: 3 })
+                .borderRadius(4)
+              Text('中 ' + this.analysis.mediumCount.toString())
+                .fontSize(10)
+                .fontColor(COLOR_AMBER)
+                .backgroundColor(COLOR_AMBER_BG)
+                .padding({ left: 6, right: 6, top: 3, bottom: 3 })
+                .borderRadius(4)
+                .margin({ left: 6 })
+              Text('低 ' + this.analysis.lowCount.toString())
+                .fontSize(10)
+                .fontColor(COLOR_GREEN)
+                .backgroundColor(COLOR_GREEN_BG)
+                .padding({ left: 6, right: 6, top: 3, bottom: 3 })
+                .borderRadius(4)
+                .margin({ left: 6 })
+            }
+            .margin({ top: 10 })
+          }
+          .width('100%')
+          .backgroundColor(COLOR_CARD)
+          .padding(16)
+          .borderRadius(16)
+          .margin({ top: 12 })
+          .alignItems(HorizontalAlign.Start)
+
+          if (this.getAcceptedRisks().length > 0) {
+            Column() {
+              Row() {
+                Text('已接受的修改')
+                  .fontSize(15)
+                  .fontWeight(FontWeight.Medium)
+                  .fontColor(COLOR_TEXT)
+                Blank()
+                Text(this.getAcceptedRisks().length.toString() + ' 条')
+                  .fontSize(11)
+                  .fontColor(COLOR_GREEN)
+              }
+              .width('100%')
+              ForEach(this.getAcceptedRisks(), (risk: RiskItem) => {
+                Row() {
+                  Text('✓')
+                    .fontSize(12)
+                    .fontColor(COLOR_GREEN)
+                    .width(18)
+                  Column() {
+                    Text(risk.clauseTitle)
+                      .fontSize(11)
+                      .fontColor(COLOR_SECONDARY)
+                    Text(risk.title)
+                      .fontSize(13)
+                      .fontColor(COLOR_TEXT)
+                      .margin({ top: 2 })
+                  }
+                  .alignItems(HorizontalAlign.Start)
+                  .layoutWeight(1)
+                }
+                .width('100%')
+                .margin({ top: 10 })
+              }, (risk: RiskItem) => 'accepted_' + risk.id)
+            }
+            .width('100%')
+            .backgroundColor(COLOR_CARD)
+            .padding(16)
+            .borderRadius(16)
+            .margin({ top: 12 })
+            .alignItems(HorizontalAlign.Start)
+          }
+
+          Text('重点风险')
+            .fontSize(18)
             .fontWeight(FontWeight.Bold)
             .fontColor(COLOR_TEXT)
-          Text('包含风险评分、条款依据、修改建议和谈判话术。')
-            .fontSize(12)
-            .fontColor(COLOR_SECONDARY)
-            .margin({ top: 4 })
-          Text(this.reportText)
-            .fontSize(12)
-            .fontColor(COLOR_TEXT)
-            .lineHeight(20)
+            .margin({ top: 20, bottom: 2 })
+
+          ForEach(this.getTopRisks(3), (risk: RiskItem) => {
+            Column() {
+              Row() {
+                Text(levelLabel(risk.level))
+                  .fontSize(10)
+                  .fontColor(levelColor(risk.level))
+                  .backgroundColor(levelBg(risk.level))
+                  .padding({ left: 6, right: 6, top: 2, bottom: 2 })
+                  .borderRadius(4)
+                Text(risk.riskType)
+                  .fontSize(10)
+                  .fontColor(COLOR_SECONDARY)
+                  .margin({ left: 8 })
+                Blank()
+                Text(risk.clauseTitle)
+                  .fontSize(10)
+                  .fontColor(COLOR_MUTED)
+              }
+              .width('100%')
+              Text(risk.title)
+                .fontSize(15)
+                .fontWeight(FontWeight.Medium)
+                .fontColor(COLOR_TEXT)
+                .margin({ top: 8 })
+              Text(risk.reason)
+                .fontSize(11)
+                .fontColor(COLOR_SECONDARY)
+                .lineHeight(17)
+                .maxLines(2)
+                .textOverflow({ overflow: TextOverflow.Ellipsis })
+                .margin({ top: 4 })
+              Text('建议：' + risk.suggestion)
+                .fontSize(11)
+                .fontColor(COLOR_GREEN)
+                .lineHeight(17)
+                .maxLines(2)
+                .textOverflow({ overflow: TextOverflow.Ellipsis })
+                .margin({ top: 6 })
+            }
+            .width('100%')
             .backgroundColor(COLOR_CARD)
             .padding(14)
-            .borderRadius(12)
-            .margin({ top: 14 })
+            .borderRadius(14)
+            .margin({ top: 10 })
+            .alignItems(HorizontalAlign.Start)
+          }, (risk: RiskItem) => 'top_' + risk.id)
+
+          Text('法律依据')
+            .fontSize(18)
+            .fontWeight(FontWeight.Bold)
+            .fontColor(COLOR_TEXT)
+            .margin({ top: 20, bottom: 2 })
+
+          ForEach(this.getUniqueLegalBases(this.getTopRisks(3)), (basis: LegalBasis) => {
+            this.LegalCard(basis)
+          }, (basis: LegalBasis) => 'report_' + basis.id)
+
+          Text('谈判话术')
+            .fontSize(18)
+            .fontWeight(FontWeight.Bold)
+            .fontColor(COLOR_TEXT)
+            .margin({ top: 20, bottom: 2 })
+
+          ForEach(this.getTopRisks(2), (risk: RiskItem) => {
+            Column() {
+              Text(risk.title)
+                .fontSize(13)
+                .fontWeight(FontWeight.Medium)
+                .fontColor(COLOR_TEXT)
+              ForEach(risk.negotiation, (script: NegotiationScript, index: number) => {
+                this.ScriptCard(script)
+              }, (script: NegotiationScript, index: number) => 'report_script_' + risk.id + '_' + index.toString())
+            }
             .width('100%')
-          Button('复制报告')
+            .alignItems(HorizontalAlign.Start)
+          }, (risk: RiskItem) => 'report_neg_' + risk.id)
+
+          Button('复制报告全文')
             .width('100%')
             .height(46)
             .fontSize(14)
             .fontColor('#FFFFFF')
             .backgroundColor(COLOR_NAVY)
             .borderRadius(23)
-            .margin({ top: 16 })
+            .margin({ top: 18 })
             .onClick(() => this.copyToClipboard(this.reportText))
-          Text('本报告仅用于风险提示，不构成法律意见。')
+
+          Text('本报告由「合同雷达」生成，仅用于风险提示，不构成法律意见。')
             .fontSize(10)
             .fontColor(COLOR_MUTED)
+            .lineHeight(16)
             .margin({ top: 14 })
         }
         .width('100%')
