@@ -46,6 +46,9 @@ ContractRadar/
 │       ├── router/index.js           路由与登录守卫
 │       └── views/                    登录、看板、五类管理页面
 ├── docker-compose.yml                MySQL 8.0（可选）
+├── setup-windows.ps1                 Windows 一键环境脚本
+├── setup-windows.bat                 Windows 双击入口
+├── WINDOWS.md                        Windows 部署与手动配置说明
 └── README.md
 ```
 
@@ -117,6 +120,16 @@ hvigorw --mode module -p product=default -p buildMode=debug assembleHap --no-dae
 ```
 
 > 命令行产物是 unsigned HAP，不能直接安装到模拟器；模拟器运行需要 DevEco 自动签名。
+
+### 5. Windows 一键部署
+
+Windows 上可以用脚本自动安装 Git/JDK/Node、拉取仓库、编译后端并安装管理端依赖：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\setup-windows.ps1
+```
+
+详细的手动步骤、缺失项和常见问题见 [WINDOWS.md](WINDOWS.md)。
 
 ## 管理端功能
 
