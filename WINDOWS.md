@@ -60,7 +60,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\setup-windows.ps1 -Install
 - 安装后打开 DevEco Studio：
   - 安装 HarmonyOS SDK
   - 在 Device Manager 中创建 Phone 模拟器
-  - 打开 `C:\ContractRadar\ContractRadar`（或你指定的安装目录）
+  - 打开 `C:\ContractRadar`（或你指定的安装目录）
   - `File > Project Structure > Signing Configs`
   - 勾选 `Automatically generate signature`
   - 按提示登录华为开发者账号

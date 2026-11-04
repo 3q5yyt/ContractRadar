@@ -152,15 +152,16 @@ if ($InstallRoot -match " ") {
     Write-Warn "Install path contains a space: $InstallRoot"
     Write-Warn "DevEco Studio may reject paths with spaces. Prefer a path like C:\ContractRadar."
 }
-try {
-    New-Item -ItemType Directory -Force -Path $InstallRoot | Out-Null
-} catch {
-    Write-Warn "Cannot create $InstallRoot. Falling back to $env:USERPROFILE\ContractRadar"
-    $InstallRoot = Join-Path $env:USERPROFILE "ContractRadar"
-    New-Item -ItemType Directory -Force -Path $InstallRoot | Out-Null
+$repoPath = $InstallRoot
+$parent = Split-Path $repoPath -Parent
+if (-not (Test-Path $parent)) {
+    try {
+        New-Item -ItemType Directory -Force -Path $parent | Out-Null
+    } catch {
+        Write-Warn "Cannot create $parent. Falling back to $env:USERPROFILE\ContractRadar"
+        $repoPath = Join-Path $env:USERPROFILE "ContractRadar"
+    }
 }
-
-$repoPath = Join-Path $InstallRoot "ContractRadar"
 Write-Ok "Project target: $repoPath"
 
 Write-Step "Cloning or updating repository"
@@ -175,8 +176,16 @@ if (Test-Path (Join-Path $repoPath ".git")) {
         Pop-Location
     }
 } elseif (Test-Path $repoPath) {
-    Write-Err "$repoPath exists but is not a git repository. Move it away and rerun."
-    exit 1
+    $hasFiles = (Get-ChildItem $repoPath -Force | Measure-Object).Count -gt 0
+    if ($hasFiles) {
+        Write-Err "$repoPath exists but is not a git repository. Move it away and rerun."
+        exit 1
+    }
+    git clone $RepoUrl $repoPath
+    if ($LASTEXITCODE -ne 0) {
+        Write-Err "git clone failed. Check network access to GitHub."
+        exit 1
+    }
 } else {
     git clone $RepoUrl $repoPath
     if ($LASTEXITCODE -ne 0) {
