@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: contract-radar-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: contract_radar
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - contract-radar-mysql:/var/lib/mysql
+
+volumes:
+  contract-radar-mysql:

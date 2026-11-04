@@ -6,6 +6,12 @@
 /entry/oh_modules
 /local.properties
 
+# Backend / admin build outputs
+/backend/target
+/backend/data
+/admin-web/node_modules
+/admin-web/dist
+
 # Build artifacts and signing materials
 *.hap
 *.hsp
